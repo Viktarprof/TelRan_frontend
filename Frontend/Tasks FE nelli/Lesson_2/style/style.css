@@ -1,0 +1,73 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* .flex_container{
+    border: 3px solid black;
+} */
+
+
+
+/* обращаемся к дивам которые находятся в флекс-контейнер */
+/* .flex_container div{
+border: 2px solid black;
+width: 150px;
+height: 150px;
+}
+.flex_container{
+    display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: end; */
+    /* height: 100vh; */
+    /* flex-wrap: wrap;
+
+    justify-content:space-around; */
+
+/* } */
+/* 
+   display: flex; - обязательно прописывать, без него не работает то что снизу
+  flex-direction - выбор основной оси
+  justify-content - выравнивание вдоль основной оси
+  align-items - выравнивание вдоль второстепенной оси
+*/
+/* _______________________________ */
+
+
+.logos{
+    background-color: antiquewhite;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logos img{
+    height: 40px;
+
+}
+
+/* .container{
+border: 2px solid black;
+height: 100px;
+width: 250px;
+}
+.squere{
+    display: flex;
+    border: 2px solid pink;
+    justify-content: end;
+
+} */
+
+.container {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .squere {
+    display: flex;
+    justify-content: end;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+  }

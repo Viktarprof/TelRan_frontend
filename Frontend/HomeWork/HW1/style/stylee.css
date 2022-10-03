@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    background-color: #00b894;
+    color: black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 7px;
+    text-align: center;
+}
+h2{
+    background-color: #0093b8;
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 7px;
+    text-align: center;
+}
+
+p{
+    text-align:center;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.name{
+    background-color:#ffeaa7;
+    border-radius: 8px;
+    color: #2d3436;
+    padding: 25px;
+    margin: 30px;
+    text-align: center;
+}
+
+.name img{
+    padding: 2px;
+    margin: 2px;
+    width: 300px;
+    border-radius: 8px;
+
+
+}
+.school{
+    background-color:#5cf0e9;
+    color: #2d3436;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 7px;
+    text-align: center;
+ 
+  
+}
+
+.work{
+    background-color: #dcff85;
+    color: #000000;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 7px;
+    text-align: center;
+    
+}
+.work table{
+    border-collapse: collapse;
+    background-color: #859dff6d;
+    color: #060101;
+}
+.skils{
+    background-color: #dcff85;
+    color: #000000;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.social{
+    background-color: #796aae;
+    color: #ffffff;
+    padding: 1px;
+    margin: 3px;
+    
+    
+}
+.forms{
+    background-color: #f0f1ec;
+    color: #000000;
+    padding: 1px;
+    margin: 3px;
+    text-align: left;
+}

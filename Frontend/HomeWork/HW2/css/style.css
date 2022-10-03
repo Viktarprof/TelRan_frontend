@@ -1,0 +1,45 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+table{
+    margin: auto;
+    border: 1px solid rgb(141, 146, 139);
+    /* border-spacing: 1px;Задает расстояние между границами ячеек в таблице. */
+    /* table-layout: fixed; !!!!!!!!!НЕ ПОНЯЛ ДЛЯ ЧЕГО ОНО ТУТ!!!!!!! */ 
+}
+
+.fon{
+    background-color: #9c88ff;
+    height: 70px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fon img{
+    height: 50px;
+   
+}
+.green{
+    background-color: greenyellow;
+}
+.yelow{
+    background-color: yellow;
+}
+.violet{
+    background-color: #9c88ff;
+}
+
+.new{
+    /* border-collapse: collapse; */
+
+    border: 1px solid rgb(255, 255, 255);
+    margin: 10px;
+    /* text-align: left; Выравнивание по левому краю */
+}
+TD, TH {
+    text-align: center;
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid rgb(176, 175, 175); /* Параметры рамки */
+}
