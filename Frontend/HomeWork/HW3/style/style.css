@@ -3,23 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-section{
-    background-color: #4FBFA5;
-    width: 100%;
-    height: 450px;
-}
 .wrapper{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
+header{
+    height: 70px;
+}
+.heder_block{
+    display: flex;
+    justify-content: space-between;
+    
+}   
+header ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+.logo_sotial{
+    margin: 40px;
+    padding: auto;
+}
+
 nav{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 12px;
     width: 100%;
     top: 10px;
-   
 }
 nav ul{
     display: flex;
@@ -31,8 +43,15 @@ nav ul{
     font-style: italic;
     font-weight: 400;
     font-size: 18px;
-    gap: 33px;
-    
+    gap: 30px;
+}
+.btn1{
+    background-color: #FFFFFF;
+    color: black;
+    width: 200px;
+    height: 60px;
+    border: none;
+  
 }
 .preheder{
     display: flex;
@@ -50,6 +69,13 @@ h1{
     left: 313px;
     top: 333px;
 }
+
+section{
+    background-color: #4FBFA5;
+    width: 100%;
+    height: 450px;
+}
+
 p{
     font-family: 'ABeeZee';
     font-style: italic;
@@ -59,15 +85,9 @@ p{
     width: 416px;
     height: 84px;
 }
-.btn{
-    background-color: #FFFFFF;
-    color: black;
-    width: 194px;
-    height: 42px;
-  
-}
-button{
-    width: 158px;
+
+.btn2{
+    width: 120px;
     height: 50px;
     background-color: #00868A;
     color: white;
@@ -109,9 +129,7 @@ h2{
 
 .actualy_section{
 width: 100%;
-
 }
-
 
 .Actualyimg{
     display: flex;
@@ -163,30 +181,25 @@ width: 100%;
 
     
 }
-.wraper_footer_block{
-    width: 1000px;
-    height: 40px;
-    border: 1px solid #C4C4C4;
-    border-bottom: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 17px;
-    padding: 25px;
-}
 .arrow img{
     border: 1px solid #e10c0c;
     width: 50px;
     height: 40px;
 }
-.divider{
-    margin-top: 0px;
-    width: 1px;
-    height: 40px;
-    background-color: #C4C4C4;
-
-}
 
 footer{
+    margin-bottom: 70px;
+}
+.footer_block{
+    display: flex;
+    justify-content: flex-end;
+   
     
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 5px;
 }
