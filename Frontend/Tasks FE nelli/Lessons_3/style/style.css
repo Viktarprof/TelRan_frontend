@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  10px 80px;
+    background-color: rgb(138, 34, 235);
+}
+.nav_menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav_menu li{
+    color: aqua;
+    list-style: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+header a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 32px;
+}
+.nav_menu li:hover{
+    cursor: pointer;
+    color: orange;
+
+}
+.wrapper{
+    margin: 50px 250px;
+    max-width: 1200px;
+    background-color: rgba(191, 191, 176, 0.256);
+}
+h2{
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+    font-style: italic;
+}
+
+.films_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.films_item{
+    position: relative;
+    transform: translate(50% -50%);
+}
+.films_item img{
+    height: 300px;
+    width: 210px;
+    object-fit: cover;
+    transition: transform 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.films_item img:hover{
+    transform: rotate(360deg)
+                scale(2);
+}
+
+.test{
+    height: 300px;
+    width: 210px;
+    background-image: url(../media/new_films/bryklin.jpg);
+    object-fit: cover;
+    transition: background-image, transform;
+    transition-duration:  1s;
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+}
+.test:hover{
+    transform: rotate(360deg)
+                scale(2);
+    background-image: url(../media/testimg.webp);
+}
+
+
+.rejting{
+    top: 10px;
+    left: -15px;
+    position: absolute;
+    background-color: green;
+    color: white;
+    width: 30px;
+    text-align: center;
+}
+p{
+    color: blueviolet;
+    font-size: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: blueviolet; 
+    height: 60px;
+}
+.footet_container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footet_container ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+   
+   
+}
+.footet_container img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+    transition: scale;
+    transition-duration:  1s;
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+}
+.footet_container img{
+    transform: scale(2);
+}
+
+.footer_text{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    flex-wrap: wrap;
+}

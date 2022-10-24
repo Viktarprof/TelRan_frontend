@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+nav .wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    height: 110px;
+}
+.logo a{
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.navig{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+ nav li{
+    padding: 20px;
+    font-size: 14px;
+    font-style: normal;
+    cursor: pointer;
+ }
+ .btn{
+    border-radius: 25px;
+    border: 2px solid black;
+    width: 173px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+ }
+
+/* section .wrapper{
+    max-width: 1200px;
+ } */
+section{
+    display: flex;
+    justify-content: center;
+    background-color: #EBEBEB;
+ }
+ 
+ h2{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    color: #BDBDBD;
+    padding-top: 140px;
+    padding-bottom: 40px;
+ }
+
+ h1{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    padding-bottom: 102px;
+ }
+
+ .container{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+ }
+
+.container1{
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+ .spec-items{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 360px;
+    background-image: url(../media/section/fon.png);
+    transition: background-image;
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition-duration: 1s;
+ }
+
+ .spec-items:hover{ 
+  background-image: url(../media/section/fon2.jpeg);
+ }
+
+ .text-name{
+    font-weight: 900;
+    font-size: 24px;
+    padding: 45px;
+    color: white;
+ }
+ 
+ button.btn2{
+    position: absolute;
+    width: 173px;
+    height: 50px;
+    left: 45px;
+    top: 280px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    
+ }
+ button.btn2:hover{
+    color: black;
+    border: 2px solid black;
+ }
+
+#about_us.wrapper{
+    background-color: white;
+}
+.about_us{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.text{
+    width: 35%;
+    padding-left: 50px;
+}
+.text_about{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    color: #BDBDBD;
+    padding-top: 140px;
+}
+.text_company{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    padding-top: 40px;
+     
+}
+.text_company1{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+    padding-top: 10px;
+    color: #005FA3;  
+}
+.text_lorem{
+    padding-top: 60px;
+    padding-bottom: 219px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+.container_cards{
+    padding-top: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* тестил
+.container_cards1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.container_cards2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+} */
+
+
+.card{
+    width: 255px;
+    height: 255px;
+    background-color:#EBEBEB;
+    /* padding: 30px; */
+    position: relative;
+   /* transform: background-color; */
+   transition: scale;
+    
+}
+
+.card:hover{
+    transform: scale(1.25);
+    color: white;
+    background-color: #005fa38f;
+}
+
+.value {
+    font-weight: 900;
+    font-size: 55px;
+    /* padding: 20px 30px; */
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+/* .value:hover{
+color: white;
+} */
+
+.text_card{
+    font-weight: 700;
+    font-size: 14px;
+    padding: 30px;
+    /* padding-left: 30px;
+    padding-top: 15px; */
+}
+
+/* .text_card:hover{
+    color: white;
+} */
+
+button.btn3{
+    position: absolute;
+    left: 30px;
+    top:190px;
+    width: 173px;
+    height: 50px;
+    border: 2px solid #005FA3;
+    border-radius: 25px;
+    background-color: #005fa300;
+    color: #005FA3;
+    cursor: pointer;
+} 
+
+button.btn3:hover{
+    color: black;
+    border: 2px solid #EBEBEB;;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+
+
+/* с первого раза не получилось */
+#about.wrapper{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+.qwerty {
+    display: flex;
+    justify-content: space-between;
+  
+   
+    /* flex-direction: column; */
+    
+}
+
+ #about .common>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* flex-wrap: wrap; */
+    width: 50%;
+    flex-direction: column;
+    padding: 0 70px; /* дали отступ. сверху и снизу ноль а по краям по 70*/ 
+    /* text-align: justify;  растянули текст */ 
+}
+
+p .lorem{
+    display: flex;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+.results{
+    cursor: pointer;
+    width: 255px;
+    height: 255px;
+    background-image: url(../media/Rectangle.png);
+    position: relative;
+    transition: background-color;
+    /* transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition-duration: 1s; */
+}
+.results :hover{
+    background-color: #005fa38f;
+}
+
+#about .container3{
+    display: flex;
+  
+    flex-direction: column;
+    padding: 0 100px; /* дали отступ. сверху и снизу ноль а по краям по 70*/ 
+    gap: 20px;
+}
+.text1{
+    padding: 40px 30px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    color: black;
+}
+.text2{
+    padding-left: 30px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+}
+button.bt3{
+    position: absolute;
+    left: 30px;
+    top:180px;
+    width: 173px;
+    height: 50px;
+    border: 2px solid #005FA3;
+    border-radius: 25px;
+    background-color: #005fa300;
+    color: #005FA3;
+
+} 
