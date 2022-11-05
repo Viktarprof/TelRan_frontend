@@ -38,7 +38,6 @@
   //     }
   //   }
   // }
-  
   //  showEachNegativeElement(numbers);
   //  console.log('------------------------')
   //  showEachNegativeElement(numbers_2);
