@@ -82,15 +82,26 @@
 
     //Напишите функцию, get_hypotenuse, которая в качестве аргумента 
     //принимает два числа (длины катетов) и возвращает гипотенузу.
-    function get_hypotenuse(a, b){
+    // function get_hypotenuse(a, b){
       
-      const hypo = Math.sqrt((a ** 2)+(b ** 2))
-        return hypo
+    //   const hypo = Math.sqrt((a ** 2)+(b ** 2))
+    //     return hypo
         
-    }console.log(get_hypotenuse(3,4)) // 25 kv = 5
+    // }console.log(get_hypotenuse(3,4)) // 25 kv = 5
   
 
 
+// Создайте функцию handler, которая принимает два аргумента, массив и число. Функция должна сформировать новый массив на основе заданного и исключить из него указанное число.
 
+//Для решения задачи используйте метод массива filter.
 
- 
+  function handler(arr, num){
+   let myarrs = [];
+   
+   for (let i = 0; i < arr; i++){
+      if (arr = num){
+        myarrs.push(i)
+      }
+    }return myarrs;
+  }
+  console.log(handler(10, 5))
