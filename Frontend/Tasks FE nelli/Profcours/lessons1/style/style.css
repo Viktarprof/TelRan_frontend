@@ -1,0 +1,11 @@
+/* 
+ 3. Элементу с классом card добавить следующие стили: border, width, border-radius, background-color, padding, margin */
+.card{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 40px;
+}
