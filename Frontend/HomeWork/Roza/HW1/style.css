@@ -1,0 +1,21 @@
+table{ 
+    border: 1px solid rgb(155, 147, 147);
+    background-color: aliceblue;
+    border-collapse: collapse;
+    width: 300px;
+    height: 100px;
+  
+}
+th, td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px ;
+  
+  
+}
+.test{
+    color:rgb(115, 206, 12);
+}
+.name{
+    text-align: left;
+}
