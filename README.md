@@ -7,4 +7,4 @@
 - [HW6](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/HW6/script)
 
 ## Proof course
-- [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW1)
+- [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW1/index.html)
