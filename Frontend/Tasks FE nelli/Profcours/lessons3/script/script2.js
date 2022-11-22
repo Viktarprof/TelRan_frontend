@@ -49,7 +49,10 @@ body.append(btnNew, div)
 
 let btn2 = document.createElement('button');
     btn2.innerText="Замена фона body";
-btn2.onclick = function(){
+// for (const elem of btn2) {
+  
+// }
+btn2.onclick =() => {
  body.classList.add('active');
 btn2.addEventListener('click', () => {
   body.classList.remove('active');
