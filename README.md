@@ -8,3 +8,4 @@
 
 ## Proof course
 - [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW1)
+- [HW2](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW2)
