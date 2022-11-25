@@ -8,7 +8,7 @@
 // открывать очередно
 //Можно ли кто-то сделать код короче во всех заданиях?
 
-const test = document.querySelector('.test');
+
 // //1
 const p = document.createElement('p');
 p.innerText = 'В бесконечность и далее...';
@@ -33,7 +33,7 @@ btnShowe.onclick = () => {
     //p.classList.toggle('active')// toggle
 //__________
 }
-document.body.append(test,btnShowe, p);
+document.body.append(btnShowe, p);
 
 
 
@@ -53,7 +53,7 @@ for (let i = 0; i < arrColors.length; i++) {
     color_btn.style.border='1px solid black';
     color_btn.style.background = arrColors[i] ;
     box_colors.append(color_btn);
-    document.body.append(test, box_colors); 
+    document.body.append(box_colors); 
 // первый вариант
     color_btn.onclick = () =>{
         document.body.style.background = document.body.style.background === arrColors[i] ? 'white' : arrColors[i];
@@ -100,7 +100,7 @@ h2.onclick = () => {
         p.style.display= 'none';
     }
 }
-}document.body.append(test, divTitle,divAbout);  
+}document.body.append(divTitle,divAbout);  
 
 
 
@@ -146,6 +146,6 @@ for (let q = 19; q < 25; q++){
 div.append(div1,div2,div3,)
 
 
-document.body.append(test, writeText,div)
+document.body.append(writeText,div)
 
 
