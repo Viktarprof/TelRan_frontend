@@ -20,13 +20,13 @@ let div1 = document.createElement('div');
 for (let elem of arrLinks) {
     let img_mini = document.createElement('img');
     img_mini.setAttribute('src', elem);
-    img_mini.style.width = '150px';
+    img_mini.setAttribute('class', 'elems');
+
     div1.append(img_mini);
     img_mini.onclick = () => {
         img_big.setAttribute('src', elem);
     } 
-    img_mini.style.boxShadow = "0px 0px 10px 5px yellow";
-    img_mini.style.padding = "5px";   
+
     
 }
 let img_big = document.createElement('img');
@@ -56,3 +56,17 @@ body.style.alignItems = 'center';
 
 body.append(div1,div2)
 // в работе заметил что все начинало работать когда создание дива, картинки, добавление шло последовательно внутри скобок. А если все было за скобками то ломалось.
+
+function test1(n){
+    if (n === 1){
+       return 1;
+    }
+    for (let i = 1; i <= n; i++){
+        i++
+        for (let j = n; j >= 1; j--){
+            j--
+        }       
+        console.log("*");
+    } 
+}
+test1(-5)

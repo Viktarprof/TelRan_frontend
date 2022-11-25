@@ -1,1 +1,16 @@
 .DS_Store
+
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+.mtj.tmp/
+
+
+
+hs_err_pid*
+replay_pid*
