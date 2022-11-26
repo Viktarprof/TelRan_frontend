@@ -12,9 +12,9 @@
 // //1
 const p = document.createElement('p');
 p.innerText = 'В бесконечность и далее...';
+p.classList = 'active';
 const btnShowe = document.createElement('button');
 btnShowe.innerText = 'Что сказал Баз Лейтер?';
-btnShowe.append(p);
 
 btnShowe.onclick = () => {
     if(p.classList[0] === 'active'){
@@ -92,16 +92,19 @@ for (let i = 0; i < films.length; i++){
     h2.innerText = films[i].title;
     divTitle.append(h2);
     
-h2.onclick = () => {
     const p = document.createElement('p');
     p.innerText = films[i].about;
     divAbout.append(p);
-        p.onmouseover = function (){
-        p.style.display= 'none';
+    p.classList = 'active';
+h2.onclick = () => {
+    if(p.classList[0] === 'active'){
+        p.classList.remove('active') 
+    }else{
+        p.classList.add('active')
     }
+
 }
 }document.body.append(divTitle,divAbout);  
-
 
 
 
