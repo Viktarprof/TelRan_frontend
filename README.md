@@ -9,4 +9,4 @@
 ## Proof course
 - [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW1)
 - [HW2](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW2/Script)
-- [HW3](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3), [CSS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3/style/style.css), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3/script/script.js)
+- Home3 (https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3), [CSS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3/style/style.css), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3/Script/script.js)
