@@ -28,11 +28,19 @@
     box-shadow: 0px 0px 10px 5px yellow;
     cursor: pointer;
     transition: transform, background-color, box-shadow;
-    transition-duration:  1s;
+    transition-duration:  0.2s;
     border: none;
 }
 .variant2:hover{
     transform: scale(0.75);
     background-color: rgb(15, 30, 43);
     box-shadow: none;
+}
+.test{
+    width: 730px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

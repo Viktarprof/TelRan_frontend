@@ -147,8 +147,28 @@ for (let q = 19; q < 25; q++){
     }
 }
 div.append(div1,div2,div3,)
-
-
 document.body.append(writeText,div)
 
+//========================================
+const container = document.querySelector('.container');
+const writeText2 = document.createElement('p');
+writeText2.setAttribute('class','words')
 
+const divs = document.createElement('div');
+divs.classList = 'test';
+
+const par = document.createElement('p');
+par.innerText = 'Нажми кнопки на своей клавиатуре.';
+
+addEventListener("keydown", (event) => {
+   
+    const btn = document.createElement('button');
+    btn.innerText = event.key;
+        btn.setAttribute('class', 'variant2');
+        divs.append(btn);
+    btn.onclick=()=>{ 
+    writeText2.innerText += event.key;
+    }  
+    });
+container.append(par,divs)
+document.body.append(writeText2,container)
