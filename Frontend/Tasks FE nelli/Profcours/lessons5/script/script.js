@@ -48,3 +48,14 @@ console.log(event.target);
 // console.log(user.last_name);
 // console.log(user.age)
 //============================
+
+const btn = document.createElement('button');
+btn.innerText = '+';
+btn.onsubmit=(event)=>{
+    event.target.preventDefault();
+
+    btn.onclick =()=>{
+        event.target.style.width += 20+'px';
+    }
+}
+document.body.append(btn);
