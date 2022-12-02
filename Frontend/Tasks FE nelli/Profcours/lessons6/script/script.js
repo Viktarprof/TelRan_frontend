@@ -117,8 +117,16 @@ random_num.onclick =()=>{
 div1.append(pText,random_num,p)
 document.body.append(div1)
 
+//==============
+const btnForm = document.querySelector('button');
+const inputEl = document.querySelector('#element');
+// inputEl.innerText = input.value;
+const getElement = () => 
+const element = document.createElement(`${inputEl}`);
 
-
+const p2 = document.createElement('p');
+p2.innerText = (`${inputEl}`);
+document.body.append(element, p2)
 
 
 
