@@ -7,8 +7,8 @@
 - [HW6](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Hayk/HW6/script)
 
 ## Proof course
-- [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW1)
-- [HW2](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW2/Script)
-- [HW3](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3/index.html), [CSS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3/style/style.css), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3/Script/script.js)
-- [HW4](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW4/index.html), [CSS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW4/style/style.css), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW4/script/script.js)
-- [HW5](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW5/index.html), [CSS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW5/style/style.css), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW5/script/script.js)
+- [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW1(таблица))
+- [HW2](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW2(смена%20картинок%20при%20нажатии)/Script)
+- [HW3](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3(клавиатура)/index.html), [CSS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3(клавиатура)/style/style.css), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3(клавиатура)/Script/script.js)
+- [HW4](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW4(форма)/index.html), [CSS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW4(форма)/style/style.css), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW4(форма)/script/script.js)
+- [HW5](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW5(слайдер)/index.html), [CSS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW5(слайдер)/style/style.css), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW5(слайдер)/script/script.js)
