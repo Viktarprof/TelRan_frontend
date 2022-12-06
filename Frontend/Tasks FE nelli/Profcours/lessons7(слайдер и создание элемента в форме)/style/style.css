@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.img_slider {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.img_slider_2 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}

@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-body{
+  /* vh по всей высоте экрана */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  border: 3px solid black;
+  background-image: url(..//media/fon.jpeg);
+  background-size: cover;
+
+}
+
+.wrapper{
+    width: 1440px;
+
+}
+
+.game-body h2{
+  font-size: 40px;
+  color: antiquewhite;
+}
+
+.game-body h4{
+  font-size: 30px;
+  color: rgb(238, 139, 1);
+  transition: scale;
+  transition-duration: 1s;
+}
+
+.game-body h4:hover{
+  scale: 1.5;
+}
+
+#start{
+  background-color: antiquewhite;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#start:hover{
+  background-color: red;
+}
+
+.game-body button{
+  width: 60px;
+  height: 40px;
+}
+
+.imgWinner{
+  width: 400px;
+  height: 300px;
+}
+.container{
+  width: 400px;
+  height: 200px;
+  background-color: rgba(240, 248, 255, 0.612);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+}
+.container p{
+  font-size: 40px;
+  text-align: center;
+}
+
+.container .generate{
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  background-color: blanchedalmond;
+  border: none;
+  border-radius: 25px;
+  box-shadow:  10px 10px 10px black;
+  cursor: pointer;
+}
+
+.card{
+  display: flex;
+  justify-content: space-around;
+  gap: 400px;
+  
+}
+.element{
+  
+  width: 150px;
+  height: 150px;
+  font-size: 20px;
+  background-color: rgba(240, 248, 255, 0.432);
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  text-align: center;  
+  transition-duration: 1s;
+}
+
+.element:hover{
+  scale: 1.5;
+
+}
+
+.win{
+  color: beige;
+  font-size: 20px;
+}

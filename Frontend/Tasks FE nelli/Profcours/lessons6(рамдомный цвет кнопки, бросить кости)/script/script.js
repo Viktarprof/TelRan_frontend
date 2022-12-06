@@ -27,7 +27,7 @@ let size = 30;
 incr_btn1.style.cssText = `width: ${size}px; height: ${size}px`;
 
 incr_btn1.addEventListener('click', () => {
-    size += 10
+    size += 10;
     incr_btn1.style.cssText = `width: ${size}px; height: ${size}px`;
 });
 divs.append(p1,incr_btn1)
@@ -52,28 +52,28 @@ document.body.append(divs)
 
 //==================================================
 // // 3. Вывести в консоль случайное целое число от 0 до 10
-// let random_num1 = Math.round(Math.random()*10);
-// console.log(random_num1);
-// // console.log(Math.round(random_num*10));
+let random_num1 = Math.round(Math.random()*10);
+console.log(random_num1);
+// console.log(Math.round(random_num*10));
 
-// let random_num2 = Math.round(Math.random() * 10); // 0 -10
-// let random_num3 = Math.round(Math.random() * 10 +1); // 1 - 11
-// let random_num4 = Math.round(Math.random() * 10 +5); // 5 - 15
-// console.log(random_num2);
-// console.log('число от 1 до 11 = ' + random_num3);
-// console.log('число от 5 до 15 = ' + random_num4);
+let random_num2 = Math.round(Math.random() * 10); // 0 -10
+let random_num3 = Math.round(Math.random() * 10 +1); // 1 - 11
+let random_num4 = Math.round(Math.random() * 10 +5); // 5 - 15
+console.log(random_num2);
+console.log('число от 1 до 11 = ' + random_num3);
+console.log('число от 5 до 15 = ' + random_num4);
 
-// Math.random() * 15; // 0 - 15
-// Math.random() * 15 + 10 // 10 - 25
+Math.random() * 15; // 0 - 15
+Math.random() * 15 + 10 // 10 - 25
 
-// Math.random() * 30; // 0 - 30
-// Math.random() * 30 + 100; // 100 - 130
+Math.random() * 30; // 0 - 30
+Math.random() * 30 + 100; // 100 - 130
 
 
 //==================================================
 // // 4. Вывести в консоль случайное целое число от 10 до 25
-// let random_num5 = Math.round(Math.random() * 15 + 10);
-// console.log('число от 10 до 25 = '+random_num5);
+let random_num5 = Math.round(Math.random() * 15 + 10);
+console.log('число от 10 до 25 = '+random_num5);
 
 
 
@@ -101,7 +101,7 @@ document.body.append(div)
 //==================
 //6 Бросить кости. Рамдобно показать цифры.
 const div1 = document.createElement('div');
-div1.style.padding='10px';
+div1.style.padding = '10px';
 const pText = document.createElement('p');
 pText.innerText = 'Случайные числа'
 
@@ -118,15 +118,6 @@ div1.append(pText,random_num,p)
 document.body.append(div1)
 
 //==============
-const btnForm = document.querySelector('button');
-const inputEl = document.querySelector('#element');
-// inputEl.innerText = input.value;
-const getElement = () => 
-const element = document.createElement(`${inputEl}`);
-
-const p2 = document.createElement('p');
-p2.innerText = (`${inputEl}`);
-document.body.append(element, p2)
 
 
 
