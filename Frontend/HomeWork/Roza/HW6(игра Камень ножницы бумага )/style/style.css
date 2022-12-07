@@ -92,7 +92,7 @@
 .card{
   display: flex;
   justify-content: space-around;
-  gap: 400px;
+  gap: 300px;
   
 }
 .element{
@@ -113,10 +113,9 @@
 
 .element:hover{
   scale: 1.5;
-
 }
 
 .win{
   color: beige;
-  font-size: 20px;
+  font-size: 40px;
 }

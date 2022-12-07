@@ -49,9 +49,13 @@ const imgSlider2 = document.querySelector('.img_slider_2');
 const left_btn = document.querySelector('.left_btn');
 const right_btn = document.querySelector('.right_btn');
 
-left_btn.addEventListener('click', () => imgSlider2.src = images2[ (--imgIndex2) - images2.length]);
-console.log(left_btn)
-
+left_btn.addEventListener('click', () => {
+ if(imgIndex2 === 0){
+  imgIndex2 = images.length;
+ } 
+  imgSlider2.src = images2[--imgIndex2 % images2.length]
+console.log(imgIndex2)
+});
 
 right_btn.addEventListener('click', () => imgSlider2.src = images2[++imgIndex2 % images2.length]);
 

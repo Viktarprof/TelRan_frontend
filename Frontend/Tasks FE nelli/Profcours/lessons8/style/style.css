@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background: #4FBFA5
+}
+.header_block{
+    max-width: 1295px;
+    margin: 0 auto;
+}
+
+.nav_menu{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav_menu ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px;
+    list-style: none;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+ }
+
+.nav_menu button{
+    background-color: white;
+    width: 194px;
+    height: 42px;
+    border: none;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.decreption_block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0 57px 0;
+}
+
+.img{
+    width: 603px;
+    height: 400px;
+    left: 862px;
+    top: 200px;
+}
+
+.decreption{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    width: 416px;
+    /* margin: auto 0; */
+    /* display: flex;
+    justify-content: center; */
+}
+
+.decreption h1{
+    font-weight: 400;
+    font-size: 48px;
+}
+.decreption p{
+    margin: 20px 0 40px 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+.decreption button{
+    width: 158px;
+    height: 50px;
+    background: #00868A;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border: transparent;
+    color: aliceblue;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.card_item {
+    width: 306px;
+  }
+  
+  .card_descr {
+    background-color: #00868A;
+    color: white;
+    font-style: italic;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .arrow_container {
+    border: 1px solid white;
+    width: 50px;
+    height: 40px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

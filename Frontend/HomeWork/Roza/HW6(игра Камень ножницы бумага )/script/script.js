@@ -72,20 +72,22 @@ const btnStoun = document.querySelector('#stoun');
 
 
 //=============== Нажатие на область предмета ======================================
+const img = document.createElement('img');
+gameBody.append(img);
+
 function start1() {
   const pinf = document.querySelector('.win');
   let compMove = Math.floor(Math.random() * 3);
+ 
   if (compMove === 0 && btnPaper){
-    pinf.innerText = 'Вы выйграли с помощью бумаги';
-    // const img = document.createElement('img');
-    // img.setAttribute('src', 'https://cs4.pikabu.ru/post_img/2015/05/09/6/1431162988_24579060.gif');
-    //  gameBody.append(img);
+    pinf.innerText = 'Вы выйграли с помощью БУМАГИ!';
+    img.setAttribute('src', 'https://cs4.pikabu.ru/post_img/2015/05/09/6/1431162988_24579060.gif');
 
   } else if (compMove === 2 && btnPaper){
-    pinf.innerText = 'Комп выйграл Вас с помощью ножниц';
+    pinf.innerText = 'Комп выйграл Вас с помощью НОЖНИЦ!';
 
   } else if (compMove === 1 && btnPaper){
-    pinf.innerText = 'Ничья';
+    pinf.innerText = 'Ничья!';
   }
 }
 
@@ -93,43 +95,42 @@ function start2() {
   const pinf = document.querySelector('.win');
     let compMove = Math.floor(Math.random() * 3);
   if (compMove === 1 && btnNails){
-    pinf.innerText = 'Вы выйграли с помощью ножниц';
-    const img = document.createElement('img');
+    pinf.innerText = 'Вы выйграли с помощью НОЖНИЦ!';
     img.setAttribute('src', 'https://cs4.pikabu.ru/post_img/2015/05/09/6/1431162988_24579060.gif');
-    gameBody.append(img);
-
+    
   } else if (compMove === 0 && btnNails){
-    pinf.innerText = 'Комп выйграл Вас с помощью камня';
+    pinf.innerText = 'Комп выйграл Вас с помощью КАМНЯ!';
 
   } else if (compMove === 2 && btnNails){
-    pinf.innerText = 'Ничья';
+    pinf.innerText = 'Ничья!';
   }
 }  
 
-  function start3() {
+function start3() {
     const pinf = document.querySelector('.win');
     let compMove = Math.floor(Math.random() * 3);
   if (compMove === 2 && btnStoun){
-    pinf.innerText = 'Вы выйграли с помощью камня';
-    const img = document.createElement('img');
+    pinf.innerText = 'Вы выйграли с помощью КАМНЯ!';
     img.setAttribute('src', 'https://cs4.pikabu.ru/post_img/2015/05/09/6/1431162988_24579060.gif');
-    gameBody.append(img);
 
   } else if (compMove === 1 && btnStoun){
-    pinf.innerText = 'Комп выйграл Вас с помощью бумаги';
+    pinf.innerText = 'Комп выйграл Вас с помощью БУМАГИ!';
 
   } else if (compMove === 2 && btnStoun){
-    pinf.innerText = 'Ничья';
+    pinf.innerText = 'Ничья!';
   } 
 }
 
 btnPaper.onclick = ()=>{
+  img.setAttribute('src','');
     start1();
 }
 btnNails.onclick = ()=>{
+  img.setAttribute('src','');
     start2();
 } 
 btnStoun.onclick = ()=>{
+  img.setAttribute('src','');
     start3()
 }
 
