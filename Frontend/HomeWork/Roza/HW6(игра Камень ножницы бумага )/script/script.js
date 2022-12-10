@@ -73,18 +73,28 @@ const btnStoun = document.querySelector('#stoun');
 
 //=============== Нажатие на область предмета ======================================
 const img = document.createElement('img');
+const summWin = document.querySelector('.summ');
+let sumWinUser = 0;
+let sumWinComp = 0;
+const pWinUser = document.createElement('p');
+const pWinComp = document.createElement('p');
+summWin.append(pWinUser, pWinComp);
 gameBody.append(img);
 
 function start1() {
   const pinf = document.querySelector('.win');
   let compMove = Math.floor(Math.random() * 3);
- 
+
   if (compMove === 0 && btnPaper){
     pinf.innerText = 'Вы выйграли с помощью БУМАГИ!';
     img.setAttribute('src', 'https://cs4.pikabu.ru/post_img/2015/05/09/6/1431162988_24579060.gif');
+    sumWinUser += 1;
+    pWinUser.innerText = sumWinUser;
 
   } else if (compMove === 2 && btnPaper){
     pinf.innerText = 'Комп выйграл Вас с помощью НОЖНИЦ!';
+    sumWinComp += 1;
+    pWinComp.innerText = sumWinComp;
 
   } else if (compMove === 1 && btnPaper){
     pinf.innerText = 'Ничья!';
@@ -97,9 +107,13 @@ function start2() {
   if (compMove === 1 && btnNails){
     pinf.innerText = 'Вы выйграли с помощью НОЖНИЦ!';
     img.setAttribute('src', 'https://cs4.pikabu.ru/post_img/2015/05/09/6/1431162988_24579060.gif');
+    sumWinUser += 1;
+    pWinUser.innerText = sumWinUser;
     
   } else if (compMove === 0 && btnNails){
     pinf.innerText = 'Комп выйграл Вас с помощью КАМНЯ!';
+    sumWinComp += 1;
+    pWinComp.innerText = sumWinComp;
 
   } else if (compMove === 2 && btnNails){
     pinf.innerText = 'Ничья!';
@@ -112,9 +126,13 @@ function start3() {
   if (compMove === 2 && btnStoun){
     pinf.innerText = 'Вы выйграли с помощью КАМНЯ!';
     img.setAttribute('src', 'https://cs4.pikabu.ru/post_img/2015/05/09/6/1431162988_24579060.gif');
+    sumWinUser += 1;
+    pWinUser.innerText = sumWinUser;
 
   } else if (compMove === 1 && btnStoun){
     pinf.innerText = 'Комп выйграл Вас с помощью БУМАГИ!';
+    sumWinComp += 1;
+    pWinComp.innerText = sumWinComp;
 
   } else if (compMove === 2 && btnStoun){
     pinf.innerText = 'Ничья!';

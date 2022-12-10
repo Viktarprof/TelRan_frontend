@@ -20,7 +20,6 @@
 
 .wrapper{
     width: 1440px;
-
 }
 
 .game-body h2{
@@ -118,4 +117,20 @@
 .win{
   color: beige;
   font-size: 40px;
+}
+.total h3{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  color:blanchedalmond;
+  font-size: 30px;
+}
+.summ{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 350px;
+  color:tomato;
+  font-size: 30px;
+  gap: 20px;
 }
