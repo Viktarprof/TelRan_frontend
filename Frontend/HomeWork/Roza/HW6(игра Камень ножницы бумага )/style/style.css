@@ -130,7 +130,10 @@
   justify-content: space-around;
   flex-direction: row;
   width: 350px;
+  background-color: rgba(245, 245, 220, 0.337);
   color:tomato;
   font-size: 30px;
+  font-weight: 900;
   gap: 20px;
+  border-radius: 25px;
 }

@@ -1,0 +1,19 @@
+.div-red{
+    color: red;
+}
+.div-green{
+    color: green;
+}
+.paragraf{
+    font-size: 30px;
+}
+.hide{
+    display: none;
+}
+.div{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    border:  1px solid black;
+    border-radius: 5px;
+}
