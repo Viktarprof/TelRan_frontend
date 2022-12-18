@@ -18,7 +18,6 @@ img {
 
 /* HEADER */
 header{
-  border: 2px solid rgb(255, 0, 0);
   max-width: 100%;
   min-height: 750px;
   background-image:url('../media/header_photo.png');
@@ -84,11 +83,8 @@ header{
   }
 }
 
-
-
 /* SECTION 1 */
 .specifications{
-  border: 2px solid greenyellow;
   display: flex;
   flex-direction: column;
   font-weight: 900;
@@ -156,11 +152,9 @@ header{
   .specifications{
   width: 780px;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  }
-  .spec_h1{
-    width:562px;
-    margin-bottom: 180px;
+  text-align: center;
   }
   .cards{
     display:flex;
@@ -169,17 +163,12 @@ header{
   }
   .card{
     width: 562px;
-    height: 360px;
+    height: 250px;
   }
   .card:hover{
-    scale:1.2;
+    scale:0.90;
   }
 }
-/* @media screen and (max-width: 650px){
-  .specifications{
-    width: 650px;
-  }
-} */
 @media (max-width: 390px) {
   .specifications{
     width: 390px;
@@ -205,7 +194,6 @@ header{
 .test{
   display: flex;
   gap: 120px;
-  border: 2px solid violet;
 }
 .company{
   margin-top: 10px;
@@ -251,7 +239,6 @@ span{
   grid-gap: 30px;
   margin-top: 55px;
   margin-bottom: 55px;
-
 }
 .about_card{
   width: 255px;
@@ -302,26 +289,60 @@ span{
     flex-direction: column;
   }
   .company{
+    display: flex;
+    align-items: center;
+    width: 780px;
     padding-top: 145px;
   }
+  .us{
+    font-weight: 900;
+    font-size: 33px;
+  
+    font-family: 'Lato';
+    color: #BDBDBD;
+  }
   .company h2{
+    font-size: 60px;
     padding-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
   .about_text{
+    width: 550px;
+    text-align: justify;
     padding-top: 60px;
+    margin-bottom: 40px;
     height: 188px;
   }
   .about_cards{
     display:grid;
-    grid-template-columns: 562px;
+    justify-items: center;
+    grid-template-columns: 780px;
     grid-template-rows: 120px;
   }
   .about_card{
-    width: 440px;
+    width: 562px;
     height: 120px;
     grid-gap: 15px;
     display: flex;
     justify-content: space-around;
+  }
+  .about_card{
+    padding: 0 auto;
+    text-align: center;
+    /* width: 562; */
+  }
+  .teext_deal{
+    width: 150px;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .case{
+    width: 107px;
+    padding-top: 15px;
+    font-size: 20px;
   }
 }
 @media (max-width: 390px) {
@@ -342,7 +363,6 @@ span{
   .about_text{
     width: 370px;
     height: 300px;
-    padding-left: 20px;
     text-align:justify;
   }
   .about_cards{
@@ -352,7 +372,7 @@ span{
    width: 390px;
   }
   .about_card{
-    width: 290px;
+    width: 380px;
     justify-content: center;
     padding-left: 1px;
   }
@@ -485,16 +505,22 @@ footer {
 @media(max-width:780px){
   .contact{
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: 780px;
     padding-top: 30px;
     padding-bottom:135px;
   }
+  .contact_us{
+   margin-left: 50px;
+   margin-bottom: 50px;
+  }
   .questions{
     width: 598px;
   }
-  .phone_email{
-    margin-top: 33px;
+  .phone_number{
+    width: 232px;
+    padding-right: 40px;
   }
   .form_text{
     display: flex;
@@ -505,13 +531,21 @@ footer {
 }
 
 @media(max-width:390px){
+  .contact_us{
+    margin: 0;
+   }
   .contact_us_h1{
     width: 390px;
     font-size: 30px;
     text-align: center;
   }
-  .questions{
+  .company h2{
     width: 390px;
+    font-size: 50px;
+  }
+
+  .questions{
+    width: 380px;
     font-size: 14px;
     text-align: center;
   }
@@ -521,15 +555,15 @@ footer {
     align-items: center;
   }
   .phone_email img{
-    width: 35px;
-    height: 25px;
+    width: 30px;
+    height: 20px;
   }
   .phone_number{
-    width: 160px;
+    width: 200px;
+    margin: 0;
   }
   .email{
     width: 160px;
-    margin-left: 5px;
   }
   .user{
     display: flex;
@@ -560,7 +594,7 @@ footer {
    align-items: center;
     width: 350px;
   }
-.label_massege{
+  .label_massege{
   margin-left: 30px;
 }
   #message{
@@ -588,9 +622,8 @@ footer {
 @media (max-width:780px){
   .sub_footer{
     width: 780px;
-    height: 64px;
     justify-content: space-around;
-    height: 20px;
+    height: 40px;
   }
 }
 @media (max-width:390px){
