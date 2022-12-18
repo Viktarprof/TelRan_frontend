@@ -18,6 +18,7 @@ img {
 
 /* HEADER */
 header{
+  border: 2px solid rgb(255, 0, 0);
   max-width: 100%;
   min-height: 750px;
   background-image:url('../media/header_photo.png');
@@ -52,9 +53,9 @@ header{
   border: none;
   cursor: pointer;
 }
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 780px){
   header{
-    width: 1050px;
+    width: 780px;
     height: 670px;
     background-position: center;
   }
@@ -62,13 +63,6 @@ header{
     padding: 130px 81px 243px 81px;
     display: flex;
     align-content: flex-end;
-  }
-}
-@media screen and (max-width: 650px){
-  header{
-    width: 650px;
-    height: 670px;
-    background-position: center;
   }
 }
 @media screen and (max-width: 390px) {
@@ -94,6 +88,7 @@ header{
 
 /* SECTION 1 */
 .specifications{
+  border: 2px solid greenyellow;
   display: flex;
   flex-direction: column;
   font-weight: 900;
@@ -110,7 +105,7 @@ header{
   color: #333333;
 }
 .spec_h5{
-  width: 445px;
+  width: 390px;
   height: 23px;
   margin-top: 140px;
   font-family: 'Lato';
@@ -157,9 +152,9 @@ header{
   line-height: 30px;
 }
 
-@media (max-width:1050px){
+@media (max-width:780px){
   .specifications{
-  width: 1050px;
+  width: 780px;
   display: flex;
   flex-direction: column;
   }
@@ -180,18 +175,17 @@ header{
     scale:1.2;
   }
 }
-@media screen and (max-width: 650px){
+/* @media screen and (max-width: 650px){
   .specifications{
     width: 650px;
   }
-}
+} */
 @media (max-width: 390px) {
   .specifications{
     width: 390px;
   }
   .spec_h1{
-    width: 390px;
-    margin-left: 10px;
+    width: 380px;
     font-size: 35px;
     text-align: center;
   }
@@ -211,12 +205,12 @@ header{
 .test{
   display: flex;
   gap: 120px;
+  border: 2px solid violet;
 }
 .company{
   margin-top: 10px;
   flex-direction: column;
   font-family: 'Lato';
-
 }
 .us{
   font-weight: 900;
@@ -301,9 +295,9 @@ span{
 .case:hover{
   color:#fff;
 }
-@media (max-width: 1050px) {
+@media (max-width: 780px) {
   .test{
-    width: 1050px;
+    width: 780px;
     display: flex;
     flex-direction: column;
   }
@@ -351,9 +345,16 @@ span{
     padding-left: 20px;
     text-align:justify;
   }
+  .about_cards{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 390px;
+  }
   .about_card{
     width: 290px;
     justify-content: center;
+    padding-left: 1px;
   }
   .text_num{
     font-size: 40px;
@@ -362,12 +363,13 @@ span{
     padding-top: 10px;
   }
   .case{
-    padding-top: 10px;
+    padding-top: 20px;
   }
 }
 
 /* footer */
 footer {
+  border:2px solid brown;
   max-width: 100%;
   min-height: 623px;
   background-image: url('../media/foooter_photo.png');
@@ -480,13 +482,13 @@ footer {
   background-color:#005FA3;
   color: #FFFFFF;
 }
-@media(max-width:1050px){
+@media(max-width:780px){
   .contact{
-  grid-template-columns:1fr;
-  grid-template-rows:repeat(2, 1fr);
-
-  padding-top: 30px;
-  padding-bottom:135px;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    padding-top: 30px;
+    padding-bottom:135px;
   }
   .questions{
     width: 598px;
@@ -504,22 +506,23 @@ footer {
 
 @media(max-width:390px){
   .contact_us_h1{
+    width: 390px;
     font-size: 30px;
     text-align: center;
   }
   .questions{
+    width: 390px;
     font-size: 14px;
     text-align: center;
   }
   .phone_email{
     display: flex;
-    font-size: 18px;
+    font-size: 16px;
+    align-items: center;
   }
   .phone_email img{
     width: 35px;
     height: 25px;
-    margin-left: 25px;
-    margin-top: 10px;
   }
   .phone_number{
     width: 160px;
@@ -582,8 +585,9 @@ footer {
   line-height: 19px;
   color: #000000;
 }
-@media (max-width:1050px){
+@media (max-width:780px){
   .sub_footer{
+    width: 780px;
     height: 64px;
     justify-content: space-around;
     height: 20px;
