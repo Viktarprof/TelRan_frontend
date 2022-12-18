@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Zilla+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Zilla+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Zilla+Slab&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Zilla+Slab&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +10,7 @@
 .container{
   max-width: 1110px;
   margin: 0 auto;
+/* border: 2px solid red; */
 }
 img {
   display: block;
@@ -30,6 +31,7 @@ header{
   display: flex;
   flex-direction: column;
   gap: 50px;
+  
 }
 .header_h1{
   padding-top: 100px;
@@ -52,9 +54,10 @@ header{
   border: none;
   cursor: pointer;
 }
-@media screen and (max-width: 1050px){
+
+@media screen and (max-width: 780px){
   header{
-    width: 1050px;
+    width: 780px;
     height: 670px;
     background-position: center;
   }
@@ -62,15 +65,11 @@ header{
     padding: 130px 81px 243px 81px;
     display: flex;
     align-content: flex-end;
+
   }
 }
-@media screen and (max-width: 650px){
-  header{
-    width: 650px;
-    height: 670px;
-    background-position: center;
-  }
-}
+
+/* под айфон */
 @media screen and (max-width: 390px) {
   header{
     width: 390px;
@@ -80,22 +79,16 @@ header{
   .pre_hed{
     display: flex;
     align-items: center;
-    text-align: center;
-  }
-  .header_h1{
-    font-size: 45px;
-  }
-  .header_btn{
-    font-size: 25px;
   }
 }
-
-
 
 /* SECTION 1 */
 .specifications{
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  /* align-content: center; */
   font-weight: 900;
   background: #EBEBEB;
   min-height: 1242px;
@@ -139,6 +132,7 @@ header{
   transition: background-image, scale;
   transition-duration: 1s;
   transition: 1s cubic-bezier(0.27, -1.91, 1, 3.49);
+  
 }
 .card:hover{
   background-image: url('https://248006.selcdn.ru/LandGen/phone_96d62f945f17ae9689d48b1c17f18b230a94bd51.png');
@@ -156,12 +150,11 @@ header{
   font-size: 24px;
   line-height: 30px;
 }
-
-@media (max-width:1050px){
-  .specifications{
-  width: 1050px;
+@media (max-width:780px){
+.specifications{
   display: flex;
   flex-direction: column;
+  align-items: center;
   }
   .spec_h1{
     width:562px;
@@ -173,52 +166,56 @@ header{
     align-items: center;
   }
   .card{
-    width: 562px;
+    width:562px;
     height: 360px;
   }
   .card:hover{
     scale:1.2;
+    
   }
 }
-@media screen and (max-width: 650px){
-  .specifications{
-    width: 650px;
-  }
-}
+/* под айфон */
 @media (max-width: 390px) {
-  .specifications{
-    width: 390px;
-  }
   .spec_h1{
-    width: 390px;
     margin-left: 10px;
+    width: 390px;
     font-size: 35px;
-    text-align: center;
   }
   .cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: 390px;
+    grid-template-rows: repeat(6, 1fr);
+
   }
   .card{
     width:390px;
     height: 160px;
   }
-  .spec_h5{
-    text-align: center;
-  }
 }
 
 /* section 2 */
+.about{
+  display: flex;
+  /* display: grid;
+  grid-template-columns: 1110px;
+  grid-template-rows:700px;
+  justify-content: center; */
+}
 .test{
   display: flex;
-  gap: 120px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  grid-gap: 120px;
 }
 .company{
-  margin-top: 10px;
+  display: flex;
   flex-direction: column;
   font-family: 'Lato';
 
 }
 .us{
+  width: 155px;
+  height: 23px;
   font-weight: 900;
   font-size: 24px;
   line-height: 33px;
@@ -250,14 +247,13 @@ span{
   color: #000000;
   margin-top: 40px;
 }
+
 .about_cards{
   display: grid;
-  grid-template-columns: repeat(2,255px);
-  grid-template-rows: repeat(2,255px);
+  grid-template-columns: repeat(2, 255px);
+  grid-template-rows: repeat(2, 255px);
   grid-gap: 30px;
-  margin-top: 55px;
-  margin-bottom: 55px;
-
+  padding: 55px 0 145px 0;
 }
 .about_card{
   width: 255px;
@@ -272,6 +268,7 @@ span{
   background-color: #005FA3;
   color: #fff;
 }
+
 .text_num{
   width: 75px;
   height: 54px;
@@ -301,14 +298,18 @@ span{
 .case:hover{
   color:#fff;
 }
-@media (max-width: 1050px) {
+@media (max-width: 780px) {
   .test{
-    width: 1050px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 562px;
+    padding: 0 85px 0 85px;
+  }
+  .us{
+    padding-top: 145px;
   }
   .company{
-    padding-top: 145px;
+    display: flex;
+    align-content: center;
   }
   .company h2{
     padding-top: 40px;
@@ -321,6 +322,7 @@ span{
     display:grid;
     grid-template-columns: 562px;
     grid-template-rows: 120px;
+    align-items: center;
   }
   .about_card{
     width: 440px;
@@ -328,43 +330,29 @@ span{
     grid-gap: 15px;
     display: flex;
     justify-content: space-around;
+    align-content: center;
   }
 }
+/* под айфон */
 @media (max-width: 390px) {
-  .test{
-    width: 390px;
-  }
-  .us{
-    text-align: center;
-  }
   .company{
     width: 390px;
-    text-align:center;
-  }
-  .company h2{
-    width: 390px;
-    text-align:center;
   }
   .about_text{
-    width: 370px;
-    height: 300px;
-    padding-left: 20px;
-    text-align:justify;
+    width: 390px;
+  }
+  .test{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 0 0 0;
   }
   .about_card{
-    width: 290px;
-    justify-content: center;
-  }
-  .text_num{
-    font-size: 40px;
-  }
-  .teext_deal{
-    padding-top: 10px;
-  }
-  .case{
-    padding-top: 10px;
+    width: 390px;
   }
 }
+
 
 /* footer */
 footer {
@@ -382,7 +370,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 400px;
 }
-.contact_us_h1{
+.contact_us h1{
   width: 445px;
   height: 47px;
   font-family: 'Merriweather';
@@ -463,6 +451,7 @@ footer {
 }
 .form_text{
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
 }
 .footerBtn{
@@ -480,11 +469,11 @@ footer {
   background-color:#005FA3;
   color: #FFFFFF;
 }
-@media(max-width:1050px){
+@media(max-width:780px){
   .contact{
   grid-template-columns:1fr;
   grid-template-rows:repeat(2, 1fr);
-
+  padding-left: 50px;
   padding-top: 30px;
   padding-bottom:135px;
   }
@@ -501,77 +490,45 @@ footer {
     justify-items: center;
   }
 }
-
+/* на айфон */
 @media(max-width:390px){
-  .contact_us_h1{
-    font-size: 30px;
-    text-align: center;
-  }
-  .questions{
-    font-size: 14px;
-    text-align: center;
-  }
-  .phone_email{
-    display: flex;
-    font-size: 18px;
-  }
-  .phone_email img{
-    width: 35px;
-    height: 25px;
-    margin-left: 25px;
-    margin-top: 10px;
-  }
-  .phone_number{
-    width: 160px;
-  }
-  .email{
-    width: 160px;
-    margin-left: 5px;
-  }
-  .user{
-    display: flex;
-    justify-content: center;
-    width: 390px;
-  }
-  #name{
-    width: 150px;
-  }
-  #second_name{
-    width: 150px;
-  }
   .contact{
     width: 390px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-direction: column;
-    margin-bottom: 50px;
+    padding-left: 5px;
   }
-  .forms{
-    margin-top: 50px;
+  .contact_us h1{
+    padding-left: 10px;
   }
-  .message_card{
+  .questions{
+    width: 390px;
+    text-align: center;
+  }
+  .phone_email{
     display: flex;
-    flex-direction: column;
-   justify-content: center;
-   align-items: center;
-    width: 350px;
-  }
-.label_massege{
-  margin-left: 30px;
-}
-  #message{
-    margin-left: 30px;
-    width:330px;
-  }
-  .footerBtn{
+    flex-wrap: wrap;
+    padding-left: 40px;
+    justify-content: center;
     width: 270px;
-    height: 60px;
+    gap: 5px;
+  }
+  .user{
+    width: 390px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
   }
 }
+
+
 /* sub_footer */
 .sub_footer{
-  height:120px;
+  min-height:120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -582,7 +539,7 @@ footer {
   line-height: 19px;
   color: #000000;
 }
-@media (max-width:1050px){
+@media (max-width:780px){
   .sub_footer{
     height: 64px;
     justify-content: space-around;
@@ -591,8 +548,8 @@ footer {
 }
 @media (max-width:390px){
   .sub_footer{
-    width: 390px;
+    height: 64px;
+    flex-direction: column;
     height: 20px;
-    font-size: 10px;
   }
 }
