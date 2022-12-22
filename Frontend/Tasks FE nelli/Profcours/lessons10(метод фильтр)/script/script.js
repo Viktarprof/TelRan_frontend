@@ -18,9 +18,8 @@ console.log(result4.length);
 
 
 
-
-let numbers_2 = [12, 36, 15, 68, 45, 5, 25, 60];
 //4. сформировать новый массив с числами, которые делятся на 5 без остатка
+let numbers_2 = [12, 36, 15, 68, 45, 5, 25, 60];
 console.log(numbers_2.filter((value) => value % 5 === 0));
 
 let result5 = numbers_2.filter(el => el % 5 === 0);
@@ -86,6 +85,6 @@ let fb_users = [
       age: 90
     }
   ]
-console.log(fb_users.filter((value) =>  value.age >= 18));
-console.log(fb_users.filter((value) =>  value.name.startsWith('A')))
-console.log(fb_users.filter((value) =>  value[2] === 'object'))
+console.log(fb_users.filter((value) =>  value.age >= 18)); // те кому за 18 лет
+console.log(fb_users.filter((value) =>  value.name.startsWith('A'))) // вывел  из массива имена начинающиеся на А
+console.log(fb_users.filter((value) =>  value.id === 4)) // вывел четвертый объект из массива

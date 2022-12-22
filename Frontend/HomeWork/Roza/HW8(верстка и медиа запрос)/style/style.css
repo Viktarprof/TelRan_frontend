@@ -157,6 +157,7 @@ header{
   text-align: center;
   }
   .cards{
+    width:780px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -622,7 +623,7 @@ footer {
   line-height: 19px;
   color: #000000;
 }
-@media (max-width:780px){
+@media (max-width:790px){
   .sub_footer{
     width: 780px;
     justify-content: space-around;

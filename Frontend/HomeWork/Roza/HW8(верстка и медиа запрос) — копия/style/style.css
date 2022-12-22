@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Zilla+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Zilla+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Zilla+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Zilla+Slab&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,6 @@
 .container{
   max-width: 1110px;
   margin: 0 auto;
-/* border: 2px solid red; */
 }
 img {
   display: block;
@@ -27,11 +26,11 @@ header{
   color: #FFFFFF;
 }
 .pre_hed{
+  width: 633px;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 50px;
-  
 }
 .header_h1{
   padding-top: 100px;
@@ -54,41 +53,44 @@ header{
   border: none;
   cursor: pointer;
 }
-
-@media screen and (max-width: 780px){
+@media (max-width:990px){
   header{
-    width: 780px;
-    height: 670px;
-    background-position: center;
+    width: 990px;
+    padding-left: 40px;
   }
   .pre_hed{
-    padding: 130px 81px 243px 81px;
     display: flex;
-    align-content: flex-end;
-
   }
 }
+@media (max-width:390px){
 
-/* под айфон */
-@media screen and (max-width: 390px) {
   header{
-    width: 390px;
-    height: 670px;
-    background-position: center;
+    width: 100%;
+    padding: 0;
+  }
+  .header_h1{
+    font-size: 30px;
   }
   .pre_hed{
-    display: flex;
+    width: 100%;
+    text-align: center;
     align-items: center;
   }
 }
 
+
+
+
+
+
+
+
+
+
 /* SECTION 1 */
 .specifications{
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  /* align-content: center; */
   font-weight: 900;
   background: #EBEBEB;
   min-height: 1242px;
@@ -103,7 +105,7 @@ header{
   color: #333333;
 }
 .spec_h5{
-  width: 445px;
+  width: 390px;
   height: 23px;
   margin-top: 140px;
   font-family: 'Lato';
@@ -132,7 +134,6 @@ header{
   transition: background-image, scale;
   transition-duration: 1s;
   transition: 1s cubic-bezier(0.27, -1.91, 1, 3.49);
-  
 }
 .card:hover{
   background-image: url('https://248006.selcdn.ru/LandGen/phone_96d62f945f17ae9689d48b1c17f18b230a94bd51.png');
@@ -150,72 +151,65 @@ header{
   font-size: 24px;
   line-height: 30px;
 }
-@media (max-width:780px){
-.specifications{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-  .spec_h1{
-    width:562px;
-    margin-bottom: 180px;
-  }
-  .cards{
-    display:flex;
-    flex-direction: column;
+@media(max-width: 990px){
+  .specifications{
+    width: 990px;
+    min-height: 950px;
     align-items: center;
   }
-  .card{
-    width:562px;
-    height: 360px;
+  .spec_h5{
+    display: flex;
+    justify-content: center;
   }
-  .card:hover{
-    scale:1.2;
-    
-  }
-}
-/* под айфон */
-@media (max-width: 390px) {
   .spec_h1{
-    margin-left: 10px;
-    width: 390px;
-    font-size: 35px;
+    display: flex;
+    justify-content: center;
   }
   .cards{
-    display: grid;
-    grid-template-columns: 390px;
-    grid-template-rows: repeat(6, 1fr);
-
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 200px);
+    grid-gap: 20px;
   }
   .card{
-    width:390px;
-    height: 160px;
+    width: 300px;
+    height: 200px;
   }
 }
 
-/* section 2 */
-.about{
-  display: flex;
-  /* display: grid;
-  grid-template-columns: 1110px;
-  grid-template-rows:700px;
-  justify-content: center; */
+@media(max-width: 390px){
+  .specifications{
+    width: 100%;
+  }
+  .cards{
+    justify-content: center;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(4, 120px);
+    grid-gap: 20px;
+  }
+  .card{
+    width: 300px;
+    height: 120px;
+  }
+  .spec_h1{
+    font-size: 30px;
+  }
 }
+
+
+/* section 2 */
 .test{
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  grid-gap: 120px;
+  flex-direction: column;
+  gap: 120px;
 }
 .company{
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   font-family: 'Lato';
-
 }
 .us{
-  width: 155px;
-  height: 23px;
   font-weight: 900;
   font-size: 24px;
   line-height: 33px;
@@ -246,14 +240,15 @@ span{
   line-height: 25px;
   color: #000000;
   margin-top: 40px;
+  text-align: justify;
 }
-
 .about_cards{
   display: grid;
-  grid-template-columns: repeat(2, 255px);
-  grid-template-rows: repeat(2, 255px);
+  grid-template-columns: repeat(2,255px);
+  grid-template-rows: repeat(2,255px);
   grid-gap: 30px;
-  padding: 55px 0 145px 0;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 .about_card{
   width: 255px;
@@ -268,7 +263,6 @@ span{
   background-color: #005FA3;
   color: #fff;
 }
-
 .text_num{
   width: 75px;
   height: 54px;
@@ -298,58 +292,66 @@ span{
 .case:hover{
   color:#fff;
 }
-@media (max-width: 780px) {
-  .test{
-    display: grid;
-    grid-template-columns: 562px;
-    padding: 0 85px 0 85px;
-  }
-  .us{
-    padding-top: 145px;
-  }
+
+@media(max-width: 990px){
   .company{
-    display: flex;
-    align-content: center;
-  }
-  .company h2{
-    padding-top: 40px;
-  }
-  .about_text{
-    padding-top: 60px;
-    height: 188px;
-  }
-  .about_cards{
-    display:grid;
-    grid-template-columns: 562px;
-    grid-template-rows: 120px;
+    width: 990px;
+    flex-direction: column;
     align-items: center;
   }
-  .about_card{
-    width: 440px;
-    height: 120px;
-    grid-gap: 15px;
+  .company_cards{
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-  }
-}
-/* под айфон */
-@media (max-width: 390px) {
-  .company{
-    width: 390px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .about_text{
-    width: 390px;
+    width: 900px;
+    height: 150px;
   }
-  .test{
+  .company h2{
     display: flex;
-    align-content: flex-start;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 0 0 0 0;
+  }
+  .about_cards{
+    margin-top: 30px;
+    grid-template-columns: repeat(2,450px);
+    grid-template-rows: repeat(2,250px);
   }
   .about_card{
-    width: 390px;
+    width: 450px;
+    height: 250px;
+  }
+}
+@media(max-width: 390px){
+  .company{
+    width: 100%;
+  }
+  .about_text{
+    width: 300px;
+    height: 300px;
+  }
+  .about_cards{
+    margin-top: 30px;
+  
+    grid-template-columns: 350px;
+    grid-template-rows: repeat(4,120px);
+  }
+  .about_card{
+    display: flex;
+    margin-left: 0;
+    gap: 15px;
+    width: 350px;
+    height: 120px;
+  }
+  .text_num{
+  font-size: 40px;
+  }
+  .teext_deal{
+    padding-top: 10px;
+  }
+  .case{
+    padding-top: 10px;
   }
 }
 
@@ -358,6 +360,7 @@ span{
 footer {
   max-width: 100%;
   min-height: 623px;
+  background-color: #005FA3;
   background-image: url('../media/foooter_photo.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -370,7 +373,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 400px;
 }
-.contact_us h1{
+.contact_us_h1{
   width: 445px;
   height: 47px;
   font-family: 'Merriweather';
@@ -451,7 +454,6 @@ footer {
 }
 .form_text{
   display: flex;
-  align-items: flex-end;
   flex-direction: column;
 }
 .footerBtn{
@@ -469,66 +471,130 @@ footer {
   background-color:#005FA3;
   color: #FFFFFF;
 }
-@media(max-width:780px){
+@media(max-width: 990px){
+  footer{
+  width: 990px;
+  }
   .contact{
-  grid-template-columns:1fr;
-  grid-template-rows:repeat(2, 1fr);
-  padding-left: 50px;
-  padding-top: 30px;
-  padding-bottom:135px;
-  }
-  .questions{
-    width: 598px;
-  }
-  .phone_email{
-    margin-top: 33px;
-  }
-  .form_text{
     display: flex;
-    align-items: flex-start;
+    width: 900px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
     flex-direction: column;
-    justify-items: center;
-  }
-}
-/* на айфон */
-@media(max-width:390px){
-  .contact{
-    width: 390px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding-left: 5px;
-  }
-  .contact_us h1{
-    padding-left: 10px;
-  }
-  .questions{
-    width: 390px;
+    align-items: center;
     text-align: center;
   }
+  .contact_us_h1{
+    width: 900px;
+  }
+  .questions{
+    width: 900px;
+  }
   .phone_email{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 40px;
+    width: 900px;
     justify-content: center;
-    width: 270px;
-    gap: 5px;
+    margin-top: 40px;
+  }
+  .forms{
+    margin-top: 50px;
+    text-align: left;
+    width: 900px;
+    justify-content: center;
+  }
+  .user{
+    width: 900px;
+    justify-content: center
+  }
+  .form_text{
+    width: 540px;
+  }
+  .message_card{
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+@media(max-width: 390px){
+  footer{
+    width: 100%;
+  }
+  .contact{
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 100%;
+    /* width: 350px; */
+  }
+  .contact_us{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+  }
+  .contact_us_h1{
+    width: 300px;
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .phone_number{
+    width: 200px;
+    margin-right: 20px;
+  }
+  .phone_email img {
+    width: 23px;
+    height: 19px;
+  }
+  .email {
+    width: 162px;
+    height: 29px;
+    margin-left: 10px;
+  }
+  .questions{
+    width: 300px;
+    font-size: 17px;
+    /* text-align: justify; */
+  }
+  .phone_email{
+    width: 350px;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 18px;
+    margin-left: 0;
+  }
+  .forms{
+    margin-top: 50px;
+    text-align: left;
+    width: 390px;
+    justify-content: center;
   }
   .user{
     width: 390px;
-    padding-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center
+  }
+  .form_text{
+    width: 150px;
+  }
+  .message_card{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #message{
+    width: 255px;
+  }
+  .footerBtn{
+    width:255px;
   }
 }
 
-
 /* sub_footer */
 .sub_footer{
-  min-height:120px;
+  height:120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -539,17 +605,19 @@ footer {
   line-height: 19px;
   color: #000000;
 }
-@media (max-width:780px){
+@media(max-width:990px){
   .sub_footer{
-    height: 64px;
+    width: 990px;
+    height:100px;
     justify-content: space-around;
-    height: 20px;
   }
 }
-@media (max-width:390px){
+@media(max-width:390px){
   .sub_footer{
-    height: 64px;
+    width: 100%;
+    height:50px;
     flex-direction: column;
-    height: 20px;
   }
 }
+
+
