@@ -26,17 +26,20 @@ header{
   color: #FFFFFF;
 }
 .pre_hed{
+  max-width: 100%;
+  height: 550px;
   padding-top: 100px;
+  gap: 50px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  justify-content: flex-start;
 }
 .header_h1{
+  width: 630px;
   padding-top: 100px;
   font-family: 'Merriweather';
   font-weight: 700;
   font-size: 48px;
-  max-width: 655px;
 }
 .header_btn{
   margin-top: 100px;
@@ -47,39 +50,32 @@ header{
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  text-align: center;
   color: #FFFFFF;
   border: none;
   cursor: pointer;
 }
-@media screen and (max-width: 780px){
+@media (max-width:990px){
   header{
-    width: 780px;
-    height: 670px;
-    background-position: center;
-  }
-  .pre_hed{
-    padding: 130px 81px 243px 81px;
-    display: flex;
-    align-content: flex-end;
-  }
-}
-@media screen and (max-width: 390px) {
-  header{
-    width: 390px;
-    height: 670px;
-    background-position: center;
-  }
-  .pre_hed{
-    display: flex;
-    align-items: center;
-    text-align: center;
+    padding-left: 40px;
   }
   .header_h1{
-    font-size: 45px;
+    width: 450px;
+    font-size: 35px;
+  }
+}
+@media (max-width:390px){
+  header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+  .header_h1{
+    width: 373px;
+    font-size: 30px;
   }
   .header_btn{
-    font-size: 25px;
+    margin-left: 40px;
   }
 }
 
@@ -90,9 +86,9 @@ header{
   font-weight: 900;
   background: #EBEBEB;
   min-height: 1242px;
+  max-width: 100%;
 }
 .spec_h1{
-  width: 663px;
   height: 47px;
   margin-top: 40px;
   font-family: 'Merriweather';
@@ -101,7 +97,6 @@ header{
   color: #333333;
 }
 .spec_h5{
-  width: 390px;
   height: 23px;
   margin-top: 140px;
   font-family: 'Lato';
@@ -113,6 +108,7 @@ header{
   padding-top: 102px;
   margin-bottom: 140px;
   display: grid;
+  max-width: 100%;
   grid-template-columns: repeat(3, 350px);
   grid-template-rows: repeat(2, 360px);
   grid-gap: 30px;
@@ -147,52 +143,49 @@ header{
   font-size: 24px;
   line-height: 30px;
 }
-
-@media (max-width:780px){
+@media(max-width: 990px){
   .specifications{
-  width: 780px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  }
-  .cards{
-    width:780px;
-    display:flex;
-    flex-direction: column;
+    min-height: 950px;
     align-items: center;
   }
-  .card{
-    width: 562px;
-    height: 250px;
-  }
-  .card:hover{
-    scale:0.90;
-  }
-}
-@media (max-width: 390px) {
-  .specifications{
-    width: 390px;
+  .spec_h5{
+    display: flex;
+    justify-content: center;
   }
   .spec_h1{
-    width: 380px;
-    font-size: 35px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
   .cards{
-    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 20px;
   }
   .card{
-    width:390px;
-    height: 160px;
-  }
-  .spec_h5{
-    text-align: center;
+    width: 300px;
+    height: 200px;
   }
 }
 
-/* section 2 */
+@media(max-width: 390px){
+  .cards{
+    justify-content: center;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(4, 120px);
+    grid-gap: 20px;
+  }
+  .card{
+    width: 300px;
+    height: 120px;
+  }
+  .spec_h1{
+    font-size: 30px;
+  }
+}
 
+
+/* section 2 */
 .test{
   display: flex;
   flex-direction: column;
@@ -204,6 +197,9 @@ header{
   justify-content: space-between;
   font-family: 'Lato';
 }
+.company_cards{
+  max-width: 100%;
+}
 .us{
   font-weight: 900;
   font-size: 24px;
@@ -213,7 +209,6 @@ header{
   color: #BDBDBD;
 }
 .company h2{
-  width: 347px;
   height: 117px;
   font-family: 'Merriweather';
   font-weight: 900;
@@ -238,6 +233,7 @@ span{
   text-align: justify;
 }
 .about_cards{
+ 
   display: grid;
   grid-template-columns: repeat(2,255px);
   grid-template-rows: repeat(2,255px);
@@ -246,6 +242,7 @@ span{
   margin-bottom: 55px;
 }
 .about_card{
+  max-width: 100%;
   width: 255px;
   height: 255px;
   padding-left: 40px;
@@ -287,108 +284,61 @@ span{
 .case:hover{
   color:#fff;
 }
-@media (max-width: 780px) {
-  .test{
-    width: 780px;
-    display: flex;
-    flex-direction: column;
-  }
+
+@media(max-width: 990px){
   .company{
+    flex-direction: column;
+    align-items: center;
+  }
+  .company_cards{
+    width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 780px;
-    padding-top: 145px;
-  }
-  .us{
-    font-weight: 900;
-    font-size: 33px;
-  
-    font-family: 'Lato';
-    color: #BDBDBD;
-  }
-  .company h2{
-    font-size: 60px;
-    padding-top: 40px;
-  }
-  .about_text{
-    width: 550px;
-    text-align: justify;
-    padding-top: 60px;
-    margin-bottom: 40px;
-    height: 188px;
-  }
-  .about_cards{
-    display:grid;
-    justify-items: center;
-    grid-template-columns: 780px;
-    grid-template-rows: 120px;
-  }
-  .about_card{
-    width: 562px;
-    height: 120px;
-    grid-gap: 15px;
-    display: flex;
-    justify-content: space-around;
-  }
-  .about_card{
-    padding: 0 auto;
     text-align: center;
   }
-  .teext_deal{
-    width: 150px;
-    padding-top: 10px;
-    font-size: 20px;
+  .company h2{
+    display: flex;
+    flex-direction: column;
   }
-  .case{
-    width: 107px;
-    padding-top: 15px;
-    font-size: 20px;
+  .about_cards{
+    margin-top: 30px;
+    grid-template-columns: repeat(2,250px);
+    grid-template-rows: repeat(2,250px);
+  }
+  .about_card{
+    width: 250px;
+    height: 250px;
+  }
+  .about_text{
+    width: 600px;
   }
 }
-@media (max-width: 390px) {
-  .test{
-    width: 390px;
-  }
-  .us{
-    text-align: center;
-  }
-  .company{
-    width: 390px;
-    text-align:center;
-  }
-  .company h2{
-    width: 390px;
-    text-align:center;
-  }
-  .company_cards{
-    width: 390px;
-    margin: 0;
-  }
+@media(max-width: 390px){
   .about_text{
-    width: 370px;
+    width: 300px;
     height: 300px;
-    margin-left: 10px;
   }
   .about_cards{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 390px;
+    margin-top: 30px;
+    grid-template-columns: 350px;
+    grid-template-rows: repeat(4,120px);
   }
   .about_card{
-    width: 380px;
-    justify-content: center;
-    padding-left: 1px;
+    display: flex;
+    margin-left: 0;
+    gap: 15px;
+    width: 350px;
+    height: 120px;
   }
   .text_num{
-    font-size: 40px;
+  font-size: 40px;
   }
   .teext_deal{
     padding-top: 10px;
   }
   .case{
-    padding-top: 20px;
+    padding-top: 10px;
   }
 }
 
@@ -396,6 +346,7 @@ span{
 footer {
   max-width: 100%;
   min-height: 623px;
+  background-color: #005FA3;
   background-image: url('../media/foooter_photo.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -430,6 +381,7 @@ footer {
 }
 .phone_email{
   display: flex;
+  align-items: center;
   margin-top: 80px;  
   margin-left: 20px;
   font-family: 'Lato';
@@ -451,11 +403,18 @@ footer {
   width: 40px;
   height: 30px;
 }
+.forms{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .user{
+  max-width: 100%;
   display: flex;
   gap:30px;
 }
 #name {
+  max-width: 100%;
   width: 255px;
   margin-top: 15px;
   padding-bottom: 15px;
@@ -466,6 +425,7 @@ footer {
   color: white;
 }
 #second_name{
+  max-width: 100%;
   width: 255px;
   margin-top: 15px;
   padding-bottom: 15px;
@@ -477,7 +437,6 @@ footer {
   font-size: 21px
 }
 #message{
-  width: 540px;
   height: 84px;
   margin-top: 35px;
   padding-bottom: 15px;
@@ -506,112 +465,106 @@ footer {
   background-color:#005FA3;
   color: #FFFFFF;
 }
-@media(max-width:780px){
+
+@media(max-width: 990px){
   .contact{
     display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column;
-    width: 780px;
-    padding-top: 30px;
-    padding-bottom:135px;
-  }
-  .contact_us{
-   margin-left: 50px;
-   margin-bottom: 50px;
-  }
-  .questions{
-    width: 598px;
-  }
-  .phone_number{
-    width: 232px;
-    padding-right: 40px;
-  }
-  .form_text{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-items: center;
-  }
-}
-
-@media(max-width:390px){
-  .contact_us{
-    margin: 0;
-   }
-  .contact_us_h1{
-    width: 390px;
-    font-size: 30px;
-    text-align: center;
-  }
-  .company h2{
-    width: 390px;
-    font-size: 50px;
-  }
-
-  .questions{
-    width: 380px;
-    font-size: 14px;
     text-align: center;
   }
   .phone_email{
-    display: flex;
-    font-size: 16px;
-    align-items: center;
-  }
-  .phone_email img{
-    width: 30px;
-    height: 20px;
-  }
-  .phone_number{
-    width: 200px;
-    margin: 0;
-  }
-  .email{
-    width: 160px;
-  }
-  .user{
-    display: flex;
     justify-content: center;
-    width: 390px;
-  }
-  #name{
-    width: 150px;
-  }
-  #second_name{
-    width: 150px;
-  }
-  .contact{
-    width: 390px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-left: 0;
   }
   .forms{
     margin-top: 50px;
+    text-align: left;
+    justify-content: center;
+  }
+  .user{
+    justify-content: center
+  }
+  .message_card{
+    width: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #message{
+    width: 540px;
+  }
+}
+@media(max-width: 390px){
+  .contact_us{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_us_h1{
+    width: 300px;
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .phone_number{
+    width: 200px;
+    margin-right: 20px;
+  }
+  .phone_email img {
+    width: 23px;
+    height: 19px;
+  }
+  .email {
+    width: 162px;
+    height: 29px;
+    margin-left: 10px;
+  }
+  .questions{
+    width: 300px;
+    font-size: 17px;
+  }
+  .phone_email{
+    width: 350px;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 18px;
+    margin-left: 0;
+  }
+  .forms{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .user{
+    width: 380px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+  }
+  .form_text{
+    width: 150px;
   }
   .message_card{
     display: flex;
-    flex-direction: column;
-   justify-content: center;
-   align-items: center;
-    width: 350px;
+    align-items: center;
+    justify-content: center;
   }
-  .label_massege{
-  margin-left: 30px;
-}
   #message{
-    margin-left: 30px;
-    width:330px;
+    width: 255px;
   }
   .footerBtn{
-    width: 270px;
-    height: 60px;
+    width:255px;
   }
 }
+
 /* sub_footer */
 .sub_footer{
+  max-width: 100%;
   height:120px;
   display: flex;
   justify-content: space-between;
@@ -623,17 +576,19 @@ footer {
   line-height: 19px;
   color: #000000;
 }
-@media (max-width:790px){
+@media(max-width:990px){
   .sub_footer{
-    width: 780px;
-    justify-content: space-around;
-    height: 40px;
+    width: 990px;
+    height:100px;
+    justify-content: space-between;
   }
 }
-@media (max-width:390px){
+@media(max-width:390px){
   .sub_footer{
-    width: 390px;
-    height: 20px;
-    font-size: 10px;
+    width: 100%;
+    height:50px;
+    flex-direction: column;
   }
 }
+
+
