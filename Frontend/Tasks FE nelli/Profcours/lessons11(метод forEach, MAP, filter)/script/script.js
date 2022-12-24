@@ -97,6 +97,8 @@ console.log("Втрое решение= " + numbers.map((value) => (value > 0 ? 
 
 
 // 6. Сформировать новый массив с теми же строками, но если строка длиннее 3 символов, то вернуть ее в верхнем регистре
+
+
 const new_greetings =  greetings.map(event => event.length >= 3 ? event.toUpperCase() : event);
 console.log('первтое решение = ' + new_greetings);
 
@@ -109,8 +111,6 @@ console.log(greetings.map(event => event.length >= 3 ? event.toUpperCase() : eve
 const random_filter = [5, 'hello', 77, true, 12, false];
 const new_random_filter = random_filter.filter(event => typeof event == 'number');
 console.log( new_random_filter)
-
-
 
 // 8. Сформировать новый массив. Если элемент число, то вернуть этот элемент. В ином случае - вернуть -1
 const new_random = random_filter.map(event => typeof event === 'number' ? event : -1);
