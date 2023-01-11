@@ -57,6 +57,172 @@ const product = [
 // 5) Оставить только положительные числа 2)создать массив, состоящий из квадратов этих чисел.
 const arr6 = [1, -2, 3, 0, 4, -5, 6, -11];
 const newArr6 = [];
-arr6.forEach((el) => el = el >= 0 ? newArr6.push(el * el) : '-');
+arr6.forEach((el) => el = el >= 0 ? newArr6.push(el ** 2) : '-');
 console.log("Квадраты положительных чисел = " + newArr6);
 
+
+
+
+
+
+
+let words = ['велосипед', 'самокат', 'машина', 'лыжи']
+words.forEach((elem, index) =>{ 
+console.log(`(${index}) ${elem}`);
+});
+
+// отрицательные сделать положительными
+const arr7 = [1, -2, 3, 0, 4, -5, 6, -11];
+const new_arr7 = arr6.map((elem) => elem < 0 ? elem * -1 : elem)
+console.log('отрицательные сделать положительными'+new_arr7);
+
+//  создать массив с длинной слов больше 7 букв
+const new_words = words.filter((elem) => elem.length >= 7)
+console.log('слова больше 7 букв = '+new_words);
+
+
+// создать массив из цен
+let prod = [
+    {
+        id: 1,
+        price: 5000,
+        product: 'car',
+        discount: 0.05
+    },
+    {
+        id: 2,
+        price: 7000,
+        product: 'house',
+        discount: 0.10 // 10%
+    },
+    {
+        id: 3,
+        price: 4000,
+        product: 'bike',
+        discount: 0.90 // 90%
+    }
+];
+const new_prod = prod.map((elem) => elem.price);
+console.log('массив из цен = ' + new_prod);
+
+// посчитать цену с учетом скидки
+prod.forEach((elem) =>
+    elem.realPrice =  elem.price * (1 - elem.discount));
+    // delete elem.price
+console.log(prod);
+
+
+
+
+// удалить товар при указании id
+function delete_product(num_id){
+prod = prod.filter(({id}) => id !== num_id);
+}
+delete_product(2)
+console.log(prod)
+
+
+
+// изменить цену одного товара при указаннии индекса товара
+function change_price(p_id, new_price){
+    prod.find(({id}) => id === p_id).price = new_price;
+}
+change_price(3, 90);
+console.log(prod)
+
+
+
+
+
+
+// indexOf проверяет есть ли элемент в масиве и возврщает индекс этого элемента 
+// находит первый индекс из массива
+// если элемента нету то пишет  -1 
+// учитывать регистр
+
+const a = [9, 8, 7, 5, 4, 7, 2];
+const new_a = a.indexOf((7, 2), 7 !== -1 ? 'yes' : 'no') // как проверяет 
+console.table(new_a);
+
+const b = ['hi', 'hello'];
+const new_b = b.indexOf(('hi'), 'hi' !== -1 ? 'yes' : 'no') // как проверяет 
+console.log(new_b);
+
+
+//                 массив / элемент / откуда начать
+function indexOfemul(arr, item, from = 0){
+    for( let i = from; i < arr.length; i++){
+        if(arr[i] === item){
+            return i
+        }
+    }
+    return -1
+}
+console.log(indexOfemul(a,7,3));
+
+
+
+// filter = в фильтре возращается true / false
+
+
+
+// includes проверяет елить ли элемент в массиве или нету
+// true
+// false
+// делает поиск символов по строке
+
+const test = [44,55,66,77,88,99,2,3,4];
+const new_test = test.includes(88,5); // вторая позиция, цифра 5, говорит с какого индекса делатб проверку
+console.log(new_test);
+// подробно
+// if(test.includes(88)){
+//     console.log('yes');
+// } else{
+//     console.log('no');
+//}
+const srt = 'dtybkjhionguy'
+const new_srt = srt.includes('bkj');
+console.log('В строке есть символы (bkj) = ' + new_srt);
+
+
+
+// найти имена с OV , VA
+const user = [
+    {
+        id: 1,
+        name: 'Ivanov',
+        product: 'car',
+        age: 5
+    },
+    {
+        id: 2,
+        name: 'Petrov',
+        product: 'house',
+        age: 10
+    },
+    {
+        id: 3,
+        name: 'Alexeev',
+        product: 'bike',
+        age: 50
+    }
+];
+let new_user = user.filter((elem) => elem.name.includes('ov'));
+console.log(new_user);
+
+
+// добавили новый элемент в массив с помощью MAP
+// const temp = [ 10, 30, 5, 9, 40, 25, 7];
+// let new_temp = temp.map((element, index, array) => {
+//     if (index == 2){
+//         array[index+1] = 66;
+//     }
+//     return element;
+
+// });
+// console.log('старый массив = '+ temp);
+// console.log('в новый массив добавили 66 = ' + new_temp)
+
+
+// обрезать пробелы .TRIM()
+// слова с маленькой буквы  tolocaleLowerCase()

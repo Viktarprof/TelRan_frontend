@@ -33,7 +33,7 @@ h1 {
 }
 
 #wrapper-modal.active {
-    display: block;
+    display: none;
 }
 
 #overlay {

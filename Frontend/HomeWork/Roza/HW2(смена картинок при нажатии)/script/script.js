@@ -23,37 +23,37 @@ for (let elem of arrLinks) {
     img_mini.setAttribute('class', 'elems');
 
     div1.append(img_mini);
+
     img_mini.onclick = () => {
         img_big.setAttribute('src', elem);
     } 
-
-    
 }
-let img_big = document.createElement('img');
-    img_big.setAttribute('src', arrLinks[2])
+    let img_big = document.createElement('img');
+        img_big.setAttribute('src', arrLinks[2])
 
-let div2 = document.createElement('div');
-div2.style.width= '500px';
+    let div2 = document.createElement('div');
+    div2.style.width= '500px';
 
-img_big.style.width = '500px';
-div2.append(img_big);
+    img_big.style.width = '500px';
+    div2.append(img_big);
 
-div1.style.display = 'flex';
-div1.style.justifyContent= 'center';
+    div1.style.display = 'flex';
+    div1.style.justifyContent= 'center';
 
 
-div2.style.display = 'flex';
-div2.style.justifyContent = 'center';
-div2.style.boxShadow = "0px 0px 10px 5px red";
+    div2.style.display = 'flex';
+    div2.style.justifyContent = 'center';
+    div2.style.boxShadow = "0px 0px 10px 5px red";
 
-let body = document.querySelector('body')
-body.style.display = 'flex';
-body.style.flexDirection = 'column';
+    let body = document.querySelector('body')
+    body.style.display = 'flex';
+    body.style.flexDirection = 'column';
 
-body.style.justifyContent = 'center';
-body.style.alignItems = 'center';
+    body.style.justifyContent = 'center';
+    body.style.alignItems = 'center';
 
 
 body.append(div1,div2)
 // в работе заметил что все начинало работать когда создание дива, картинки, добавление шло последовательно внутри скобок. А если все было за скобками то ломалось.
+
 
