@@ -41,14 +41,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    
+    text-align: center; 
   }
   .text_profil h1{
     font-size: 70px;
     color: #130f40;
     margin-right: 94px;
+    text-decoration: none;
+    background: linear-gradient(to right, transparent, transparent), linear-gradient(to right, #ff0000, #fff200, #1e9600);
+    background-size: 100% 3px, 0 3px;
+    background-repeat: no-repeat;
+    transition: background-size 400ms; 
   }
+  .text_profil h1:hover{
+    background-size:0 50px, 100% 80px;
+    border-radius: 25px;
+  }
+
   .text_profil p{
     font-size: 30px;
     color: #130f40;
@@ -154,12 +163,14 @@
 }
 .btnShow,
 .btnclose{
+  font-size: 20px;
   background-color: deepskyblue;
   color: ghostwhite;
   width: 100px;
   height: 50px;
   border: none;
   box-shadow:2px 5px 18px 5px black;
+  cursor: pointer;
 }
 .experience{
    padding-top: 100px;
@@ -190,6 +201,7 @@
 .img_slider img{
     width: 400px;
     height: 550px;
+    cursor: pointer;
 }
 span{
   font-weight: bold;
