@@ -7,6 +7,7 @@
 - [HW6](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Hayk/HW6/script)
 
 ## Proof course
+- [CV](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/MySV)
 - [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW1(таблица))
 - [HW2](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW2(смена%20картинок%20при%20нажатии)/Script)
 - [HW3](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3(клавиатура)/index.html), [CSS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3(клавиатура)/style/style.css), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW3(клавиатура)/Script/script.js)
