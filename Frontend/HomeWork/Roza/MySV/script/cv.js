@@ -37,10 +37,10 @@ btnclose.addEventListener('click',closeCard);
 
 // слайдер
 const images = [
-    '/media/clider/1.png',
-    '/media/clider/2.png',
-    '/media/clider/3.jpeg',
-    '/media/clider/4.jpeg'
+    './media/clider/1.png',
+    './media/clider/2.png',
+    './media/clider/3.jpeg',
+    './media/clider/4.jpeg'
 ];
 let imgIndex1 = 0;
  const imgSlider = document.querySelector('.img_slider');
