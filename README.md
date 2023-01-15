@@ -6,7 +6,7 @@
 - [HW5](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Hayk/HW5)
 - [HW6](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Hayk/HW6/script)
 
-## Proof course
+## Proof course ROZA
 - [CV](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/MySV)
 - [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW1(таблица))
 - [HW2](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW2(смена%20картинок%20при%20нажатии)/Script)
@@ -17,3 +17,6 @@
 - [HW7](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW7(GRID)/index.html), [CSS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW7(GRID)/style/style.css);
 - [HW8](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW8(верстка%20и%20медиа%20запрос)/index.html); [CSS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW8(верстка%20и%20медиа%20запрос)/style/style.css);
 - [HW9](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW9(методы%20массива)/script/script.js)
+
+## Proof course TIGRAN
+- [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW1(метод%20%string))
