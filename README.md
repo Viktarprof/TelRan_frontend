@@ -19,4 +19,4 @@
 - [HW9](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/HW9(методы%20массива)/script/script.js)
 
 ## Proof course TIGRAN
-- [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW1(метод%20%string))
+- [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW1(метод%20string)/script/script.js)
