@@ -1,4 +1,3 @@
-
 // Дан массив с числами
 let numbers = [3, -10, 7, 0, -50, 67, -47, 4, 564];
 
@@ -114,18 +113,32 @@ console.log(users);
 
 // ДЗ:
 // 1. Сформируйте массив из строк, состоящих только из имен и фамилий пользователей. Выведите результат в консоль.
+// решение 1
+const users_name = users.map(el => el.first_name + el.last_name);
+console.log(users_name);
+//решение 2
+const users_names1 = users.map(el => `${el.first_name} ${el.last_name}`);
+console.log(users_names1);
+//решение 3
 users.forEach((value) => console.log(value.first_name, value.last_name));
 
+
 // 2. Сформируйте массив из совершеннолетних пользователей. И выведите в консоль результат в формате: <Имя> <Фамилия> (<возраст>): <зарплата>.
+// пример ['Ivan Ivanov (20): 500', 'Irina Alexandrova (46): 1500', 'Denis Sokolov (30): 760']
 const newArrayUsers = users.filter((value) => value.age >= 18)
-                            .map((value1) => `${value1.first_name} ${value1.last_name} (возраст ${value1.age} лет) : ${value1.salary}`)
+                            .map((el) => `${el.first_name} ${el.last_name} (возраст ${el.age} лет) : ${el.salary}`)
                           //.map((value1) => `Имя - ${value1.first_name}  Фамилия - ${value1.last_name} (возраст): ${value1.age} лет  зарплата: ${value1.salary} - usd`)
 console.log(newArrayUsers);
-// пример ['Ivan Ivanov (20): 500', 'Irina Alexandrova (46): 1500', 'Denis Sokolov (30): 760']
+
 
 // 3. Сформируйте новый массив без объекта, где first_name == "Irina"
-const withOutIrina = users.findIndex((value) => value.first_name == "Irina");
-console.log("индекс объекста 'Irina' = " + withOutIrina); 
+// решение 1
+const users_without_irina = users.filter(el => el.first_name !== 'Irina');
+console.log(users_without_irina);
+
+// решение 2
+const withoutIrina = users.findIndex((value) => value.first_name == "Irina" + users.splice(2,1));
+console.log("индекс объекста 'Irina' = " + withoutIrina); 
 users.splice(2,1); // удалить со второго индекса один объект
 console.log(users);
 
