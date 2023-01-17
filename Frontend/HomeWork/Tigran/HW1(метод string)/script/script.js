@@ -38,7 +38,7 @@ let names = [
 'Jonh Snow', 
 'Oliver', 
 'Neena Stich',
- 'Grant Laster', 
+'Grant Laster', 
 'Persius Master', 
 'Lest' 
 ]   
@@ -47,3 +47,6 @@ el.includes(' ') ? el.split(' ') : el.split(' ').concat(undefined)); // пров
 console.log(full_names1);
 
 
+const newq = names.map((el) =>  
+el.includes(' ') ? el.replaceAll(' ', ' , ') : el.slice(0) + ' , undefined');
+console.log(newq);
