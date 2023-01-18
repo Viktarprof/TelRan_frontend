@@ -42,11 +42,34 @@ let names = [
 'Persius Master', 
 'Lest' 
 ]   
+// решение 1
+const full_names = names.map((el) => 
+el.includes(' ') ? [el.replaceAll(' ', ' , ')] : [el.slice(0) + ' , undefined']);
+console.log(full_names);
+
+
+// решение 2
 const full_names1 = names.map((el) =>
-el.includes(' ') ? el.split(' ') : el.split(' ').concat(undefined)); // проверяем на наличие пробела. если да то разделить ковычками. Если нет то ковычки и undefined
+el.includes(' ') ? el.split(' ') : el.split(' ').concat(undefined)) // проверяем на наличие пробела. если да то разделить ковычками. Если нет то разделитель и undefined
 console.log(full_names1);
 
 
-const newq = names.map((el) =>  
-el.includes(' ') ? el.replaceAll(' ', ' , ') : el.slice(0) + ' , undefined');
-console.log(newq);
+
+// решения с урока
+// # 1
+let full_names2 = []
+for (const elem of names) {
+    let elemArray = elem.split(' ')
+    if(elemArray.length == 2){
+        full_names2.push(elemArray)
+    } else if (elemArray.length == 1){
+        elemArray.push(undefined)
+        full_names2.push(elemArray)
+    }
+    console.log(full_names2);
+}
+
+// # 2
+names.forEach((elem) =>
+  console.log(elem.includes(" ") ? elem.split(" ") : [elem, undefined])
+);
