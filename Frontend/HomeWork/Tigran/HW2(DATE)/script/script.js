@@ -92,21 +92,19 @@ let arrays = [
             ];
 let reg_phones = /^\W*\d{11}/
 let reg_email = /\s*\w+[@]\w+[.]\w+/
-    const phones = [];
-    const email = [];
+    let phones = [];
+    let email = [];
 for (const el of arrays) {
     if(el.match(reg_phones)){
         phones.push(el.match(reg_phones)[0])
             //const phones  = arrays.map((el => el.slice(el.indexOf(el.match(reg_phones)),el.indexOf(' '))));  // в этом варианте сформирует с пустыми значениеми если нету цифр. ПОТОМУ ЧТО НЕ ПОДХОДИТ ПО МАСКЕ??
             //console.log(phones);
-    } else if(el.includes("@")){
-        const email = arrays.filter((el) =>  el.includes('@'));
-        // email.push(el.match(reg_email)[0])
-        console.log(email);
+    } else if(el.match(reg_email)){
+        email.push(el.match(reg_email)[0])
     }
 }
-// console.log(phones);
-
+console.log(phones);
+console.log(email);
 
 
 

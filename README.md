@@ -20,3 +20,4 @@
 
 ## Proof course TIGRAN
 - [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW1(метод%20string)/script/script.js)
+- [HW2](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW2(DATE)/script/script.js)
