@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+  body{
+    background-color:dodgerblue;
+    background-image: 
+                      linear-gradient(180deg, dodgerblue 25%, yellow 100%);
+  
+  }
 
   .wrapper{
     max-width: 1200px;
@@ -127,15 +133,38 @@
   .short_informations{
     background-color: rgba(240, 248, 255, 0.485);
   }
-    .cards{
+  .cards{
+    position: relative;
+    display: inline-block;
     margin-top: 50px;
     text-align: center;
+    background: rgba(250, 235, 215, 0.519);
+    border-radius: 20px;
+    clip-path: polygon(60px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 70px);
+    transform: clip-path 2s;
+  
+  }
+  .cards::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height:  60px;
+    background: rgba(226, 232, 121, 0.44);
+    box-shadow: 6px 7px 9px 0px rgba(22, 21, 21, 0.831);
+    transition: transform 2s;
+    border-radius: 0 0 20px 0 ;
   }
   .cards:hover{
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 0px);
     transform: scale(1.2);
-    background-color: rgba(255, 228, 196, 0.44);
     border-radius: 20px;
     transition-duration: 2s;
+  }
+  .cards:hover::after{
+    transform: translate(-100%, -100%);
+    transition: transform .5s;
   }
   .cards h4{
     font-size: 40px;
@@ -161,6 +190,10 @@
     text-align: center;
     font-size: 50px;
 }
+.btn_AND_load{
+  display: flex;
+  gap: 40px;
+}
 .btnShow,
 .btnclose{
   font-size: 20px;
@@ -171,6 +204,34 @@
   border: none;
   box-shadow:2px 5px 18px 5px black;
   cursor: pointer;
+  animation: swing 1s ease;
+  animation-iteration-count: infinite;
+}
+@keyframes  swing{
+  15% {transform: translateX(4px);}
+  35% {transform: translateX(-5px)}
+  55% {transform: translateX(2px)}
+  75% {transform: translateX(-3px)}      
+  85% {transform: translateX(2px)}
+  100% {transform: translateX(0px)}
+      
+  
+}
+.load{
+
+  border: 5px solid black;
+  border-radius: 50%;
+  border-top: 5px solid #fff200;
+  width: 40px;
+  height: 40px;
+  animation: rotate 1s linear infinite;
+}
+ @keyframes  rotate{
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(-90deg)}
+  50% {transform: rotate(-180deg)}
+  75% {transform: rotate(-270deg)}      
+  100% {transform: rotate(-360deg)} 
 }
 .experience{
    padding-top: 100px;
