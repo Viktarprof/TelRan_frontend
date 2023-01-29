@@ -3,12 +3,14 @@
 // Примечание: инициализация дат должна быть внутри функции
 
 checkDate = () => {
-    let date = new Date().getDate();                // текущий день
-    let endDate = new Date('2023-01-31').getDate(); // указал год-месяц и день когда закончится текущий месяц. из этого всего выбрать только день
-    let days = endDate - date;                      // если написать с +1, с учетом текущего дня.
-    console.log('Количество дней до конца текущего месяца: ' + days); 
-    // console.log('январь '+ date);
-    // console.log('февраль '+ endDate);
+    let dateNow = new Date();                // текущий день
+    let dateNext = new Date(dateNow.getFullYear(),dateNow.getMonth() + 1,1); // 
+    // указал год-месяц и день когда закончится текущий месяц. из этого всего выбрать только день
+    let result = (dateNext.getTime() - dateNow.getTime()) / (1000 * 60 * 60 * 24);
+    let result2 = dateNext.getDate() - dateNow.getDate();
+
+    console.log('Количество дней до конца текущего месяца: ' + Math.floor(result)); 
+    console.log('Количество дней до конца текущего месяца: ' + result2);
 }
 checkDate()
 
@@ -23,12 +25,8 @@ checkDate()
 // Иначе необходимо вывести “Пятница будет через n дней”, где n - это количество дней до пятницы.
 // Предусмотрите вывод 4 пункта (дня, дней)
 
-let toDayIs = new Date().getDay();              // текущий день недели
-// console.log(toDayIs);
-let Friday = new Date('2023-01-20').getDay();   // установил точный день недели - пятница
-// console.log(Friday);
-let newfriday = Friday - toDayIs;
-// console.log(newfriday);
+let toDayIs = new Date().getDay();  // текущий день недели
+// console.log(toDayIs); 
 isItFridayToday=()=>{
     if( toDayIs == 5){
         console.log('Сегодня пятница!');
@@ -37,11 +35,7 @@ isItFridayToday=()=>{
     } else if( toDayIs == 4){
         console.log('Завтра пятница!');
     } else {
-            if(toDayIs != 1){
-                console.log("Пятница будет через " + newfriday + ' день.')
-            } else {
-                console.log("Пятница будет через " + newfriday + ' дня.')
-            }
+        console.log(`Пятница будет через ${5- toDayIs} ${toDayIs == 0 ? 'дней' : 'дня'}`)
         }
 }
 isItFridayToday()
@@ -71,6 +65,20 @@ const newArray = [];
 }
     console.log(getInfo(prices));
 
+// второе решение =====================    
+function getInfo(prices) {
+    let results = [0,0];
+    prices.forEach(el => {
+            if (el.startsWith('Цена')){
+                results[0]++  
+            }
+            if (el.endsWith('$')){
+                results[1]++  
+            }
+    })
+    return results
+}
+console.log(getInfo(prices));
 
     
 
@@ -90,22 +98,40 @@ let arrays = [
             'jetpackfor@gmail.ru',
             '89840959922 some@yandex.com',
             ];
+// ============= #1
 let reg_phones = /^\W*\d{11}/
 let reg_email = /\s*\w+[@]\w+[.]\w+/
     let phones = [];
     let email = [];
-for (const el of arrays) {
+    arrays.forEach((el) => {
     if(el.match(reg_phones)){
         phones.push(el.match(reg_phones)[0])
-            //const phones  = arrays.map((el => el.slice(el.indexOf(el.match(reg_phones)),el.indexOf(' '))));  // в этом варианте сформирует с пустыми значениеми если нету цифр. ПОТОМУ ЧТО НЕ ПОДХОДИТ ПО МАСКЕ??
-            //console.log(phones);
-    } else if(el.match(reg_email)){
+    } 
+    if(el.match(reg_email)){
         email.push(el.match(reg_email)[0])
     }
-}
+})
 console.log(phones);
 console.log(email);
 
+// ================= #2 
+let email2 = [];
+let phones2= [];
+arrays.forEach(elem => {
+    let row = elem.split(' ')
+    if(row.length == 2){
+        phones2.push(row[0])
+        email2.push(row[1])
+    } else {
+        if (elem.includes('@')){
+            email2.push(elem)
+        } else {
+            phones2.push(elem)
+        }
+    }
+})
+console.log(email2);
+console.log(phones2);
 
 
 
@@ -128,9 +154,14 @@ console.log(email);
 '4000 0016 3556 6899', 
 '4000 0017 4456 4699'
 ]
+// #1 =======================
 let reg_cards = / \d{4} \d{4} /
-const new_cards = cards.map((el) => el.replace(el.match(reg_cards), '*****'));
-console.log(new_cards);
+cards = cards.map((el) => el.replace(el.match(reg_cards), '*'.repeat(5)));
+// #2 =======================
+let NEWcards = cards.map((el) => el.replace(el.slice(4,-4), '*'.repeat(5)));
+
+console.log(cards);
+console.log(NEWcards);
 	
 
 

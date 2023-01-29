@@ -108,4 +108,3 @@ discountPrice.forEach(({title, price, discount}) => {
   root.append(card);
 
 }) 
-
