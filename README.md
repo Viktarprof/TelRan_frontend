@@ -21,4 +21,4 @@
 ## Proof course TIGRAN
 - [HW1](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW1(метод%20string)/script/script.js)
 - [HW2](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW2(DATE)/script/script.js)
-- [HW3](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW3(ООП%,%Шаблонизация)/script/script.js)
+- [HW3](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW3(ООП%2C%20Шаблонизация)/script/script.js)
