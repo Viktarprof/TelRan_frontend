@@ -8,6 +8,17 @@ let someObj = {
             key3: 'value3',
             key4: 'value4',
         }
+// #1
+function getKeys(obj){
+    const key_s = []
+    for (const key in obj) {
+        key_s.push(key)    
+    }
+    return  key_s; 
+}
+console.log(getKeys(someObj));
+
+// #2
 function getKeys(result){
     return 'результат работы метода Object.keys() согласно примеру ' + result; 
 }
@@ -23,7 +34,7 @@ console.log(getKeys(Object.keys(someObj)))
 // #1
 getAvg1 = (example) => {
     let count = example.reduce((acc,cur) => acc + cur, 0);
-    return 'среднее значение ' + count / example.length;
+    return 'среднее значение = ' + count / example.length;
 }
 console.log(getAvg1([1,2,3,4,5]));
 
@@ -34,7 +45,7 @@ getAvg2 = (example) => {
         count += example[iterator]
     }
   // console.log(count); // 15
-    return 'среднее значение ' + count / example.length;
+    return 'среднее значение = ' + count / example.length;
 };
 console.log(getAvg2([1,2,3,4,5]));
 
@@ -44,8 +55,7 @@ getAvg3 = (example) => {
     for (let elem = 0; elem < example.length; elem++) {
         count += example[elem]
     }
-    // console.log(count); // 15 почему ????????
-    return 'среднее значение ' + count / example.length;
+    return 'среднее значение = ' + count / example.length;
 };
 console.log(getAvg3([1,2,3,4,5]));
 
@@ -62,20 +72,23 @@ console.log(getAvg3([1,2,3,4,5]));
 
 // #1
 countString1 = (array) => {
-    let srting1 = array.filter(el => typeof el == 'string');
-        console.log(`Количество элементов ‘string’ = ${srting1.length}`);  // 3
+    let srtings1 = array.filter(el => typeof el == 'string');
+        console.log(`Количество элементов ‘string’ = ${srtings1.length}`);  // 3
 }
 countString1([1,true,'3','value1',9,'key']);
+
 // #2
 countString2 = (array) => {
-    let srting2 = array.filter(el => typeof el == "string").length; 
-    console.log(`Количество элементов ‘string’ = ${srting2}`); // 3
+    let srtings2 = array.filter(el => typeof el == "string").length; 
+    console.log(`Количество элементов ‘string’ = ${srtings2}`); // 3
 }
 countString2([1,true,'3','value1',9,'key']);
+
 // #3
 countString3 = (array) => {
-    let srting = array.reduce((acc, cur) => typeof cur == "string" ? acc += 1 : cur); 
-        console.log(`Количество элементов ‘string’ = ${srting}`);   // решена не до конца 10
+    const count = [];
+    let srtings3 = array.reduce((acc, cur) => typeof cur == "string" ? count.push(acc + cur) : 0); 
+        console.log(`Количество элементов string = ${srtings3}`);
 }
 countString3([1,true,'3','value1',9,'key']);
 
@@ -94,26 +107,21 @@ let someObj1 = {
             key4: 'value4',
         };
 ////#1
-// getEnteries = (object) => {
-//     for (let key in object) {
-//     console.log('результат работы метода Object.entries ',[key, object[key]] );
-//     }
-//      // const object_JSON = JSON.stringify(object)
-// // return [object_JSON];
-// }
-// console.log(getEnteries(someObj1)) исправить
-
+getEnteries = (object) => {
+const test = [];
+    for (let key in object) {
+    test.push([key, object[key]]);
+    }
+    return test
+}
+console.log(getEnteries(someObj1))
 
 
 // #2
 getEnteries = (obj) => {
-    console.log('результат работы метода Object.entries =', Object.entries(obj))
+    return 'результат работы метода Object.entries =', Object.entries(obj)
 }
-getEnteries(someObj1)
-
-
-
-
+console.log(getEnteries(someObj1));
 
 
 
@@ -133,6 +141,7 @@ getEnteries(someObj1)
             // key6: ‘key’
 //      }
 const array =  [1,true,'3','value1',9,'key'];
+
 // #1
 const new_array = array.reduce((object, value, index) => {
     return {...object, [`key${index + 1}`]: value}
@@ -153,6 +162,7 @@ const obj = Object.assign({}, array );
 
 
 
+    
 // ---- КОНСУЛЬТАЦИЯ 28.01.2023 ------------------
 // Напишите функцию getSqrt(), которая может принимать любое количество аргументов. 
 // Функция после вызова должна будет вывести в консоль первое попавшее число, корень которого вычисляется без остатка. Если элемент не найдется - функция должна вывести в консоль "none"

@@ -232,35 +232,61 @@ const users = [
           ]
 
 
-// Скидываю обещанные задачки. Массив users можно найти по ссылке: https://jsonplaceholder.typicode.com/users
+
+// Массив users можно найти по ссылке: https://jsonplaceholder.typicode.com/users
 // Сформировать массив из пользователей, чей никнэйм начинается на букву K
+//#1
+const k_users = users.filter(el => el.username[0].toLowerCase() === 'k');
+console.log(k_users);
+//#2
 const users_K = users.filter(el => el.username.startsWith('K'));
 console.log(users_K);
 console.log('Никнэйм начинается на букву "K" =', users_K.length);
 
+
+
 // Сформировать массив из строк, описывающей каждого юзера в формате: <Имя Фамилия>, <номер телефона> (<город>, <индекс>)
+
+// #1
+const users_info = users.map(({ name, phone, address }) => `${name}, ${phone} (${address.city}, ${address.zipcode})`);
+
+console.log(users_info);
+
+// #2
 const users_form = users.map(el =>`Имя Фамилия ${el.name},\n Номер телефона ${el.phone} -- (город ${el.address.city} индекс ${el.address.zipcode}); \n`);
+
 console.log('Формат записи = ' + users_form);
 
 
 // Сформировать массив из веб-сайтов каждого пользователя
+// #1
+const web_sites = users.map(el => el.website);
+console.log(web_sites)
+
+// #2
 const website = users.map((el, index )=> `website_${index + 1}: ` + el.website)
 console.log('Массив из веб-сайтов = ' + website);
 
 
+
 // Сформировать массив из объектов с информацией о компаниях, в которых работают юзеры
-const company_info = users.map(el => `${el.company.name} \n${el.company.catchPhrase} ${el.company.bs}`);
+// #1
+const companies = users.map(el => el.company);
+console.log(companies);
+
+// #2
+const company_info = users.map(el => `${el.company.name}  ${el.company.catchPhrase} ${el.company.bs}`);
 console.log('Массив из объектов с информацией о компаниях = ', company_info);
 
+
+
+
 // Сформировать массив из юзеров, чем номер телефона начинается с единицы
+// #1
+const phones_1 = users.filter(el => el.phone[0] === '1');
+console.log(phones_1);
 
+// #2
 const phone_start_1 = users.filter((el) => el.phone.startsWith(1))
-
 console.log(phone_start_1)
 console.log(phone_start_1.length) // 3
-
-
-
-// ? `${el.name} ${el.phone}` : `всего других номеров телефонов ${el.phone.length}`)
-
-// console.log('номер телефона начинается с единицы = ', number_phone_starts_1);
