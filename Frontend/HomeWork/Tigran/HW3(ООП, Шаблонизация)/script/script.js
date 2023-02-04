@@ -45,7 +45,7 @@ getAvg2 = (example) => {
         count += example[iterator]
     }
   // console.log(count); // 15
-    return 'среднее значение = ' + count / example.length;
+    return 'среднее значение = ' + count / example.at(-1);
 };
 console.log(getAvg2([1,2,3,4,5]));
 
@@ -91,6 +91,13 @@ countString3 = (array) => {
         console.log(`Количество элементов string = ${srtings3}`);
 }
 countString3([1,true,'3','value1',9,'key']);
+
+// #4
+countString4 = (array) => {
+    let srtings4 = array.reduce((acc, cur) => typeof cur == "string" ? acc + 1 : acc, 0); // добавляем +1 к асс если == "string"
+        console.log(`Количество элементов string = ${srtings4}`);
+}
+countString4([1,true,'3','value1',9,'key']);
 
 
 
@@ -149,6 +156,27 @@ const new_array = array.reduce((object, value, index) => {
   console.log('Объект по следующему правилу ', new_array)
 
 // #2
+    let obj_k = {}
+for (let i = 0; i < array.length; i++) {
+   obj_k[`key${i+1}`] = array[i]
+}
+console.log('Объект по следующему правилу ', obj_k)
+
+// #3
+    let obj_k1 = {}
+for (let i in array) {
+   obj_k1[`key${+i+1}`] = array[i]
+}
+console.log('Объект по следующему правилу ', obj_k1)
+
+// #4
+
+let obj_k2 = {}
+array.forEach((el, idn) => obj_k2[`key${idn + 1}`] = el);
+console.log(obj_k2);
+
+
+// #5
 const obj = Object.assign({}, array );
     console.log('Объект по следующему правилу ', obj)
 
