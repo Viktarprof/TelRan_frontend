@@ -75,27 +75,3 @@ const render_user = json =>{
 
 
 
-
-//Д/З
-
-// Реализуйте класс Student (студент), который будет иметь следующие свойства: 
-// name (имя), lastname(фамилия), major (специализация), grade (оценка)
-// Реализйуте метод get_info (выводит в консоль строку 'Имя: <Имя>, Фамилия: <Фамилия>, Специализация <специализация>, Средний балл: <оценка>')
-// Реализуйте методы change_grade_up и change_grade_down, которые будет изменять свойство grade на переданное значение
-
-class Student{
-  constructor(name, lastname, major, grade){
-        this.name = name
-        this.lastname = lastname
-        this.major = major
-        this.grade = grade
-  }
-  get_info(){
-let average_score = 0;
-log
-  }
-
-}
-let students1 = new Student('Viktor', 'Kalosha', 'Front-End', 10);
-console.log(students1);
-get_info();
