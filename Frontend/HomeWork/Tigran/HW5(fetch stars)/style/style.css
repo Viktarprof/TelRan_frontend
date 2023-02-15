@@ -103,7 +103,6 @@ body{
     background-image: url('..//media/fon.png');
     background-repeat:repeat-y;
     background-position: center;
-    opacity: 80%;
 }
 
 #root{
