@@ -10,6 +10,7 @@ let order = {
         totalPrice: 15000 
 } 
 
+// ======== решение 1 ==========
 let descriptor = [];
     for (let key in order) {
         descriptor.push([key, order[key]]);
@@ -19,7 +20,11 @@ console.log(Object.entries(
             Object.fromEntries(descriptor),'totalPrice')
             ));
      
+// =>  [[ 'value', 15000 ], [ 'writable', true ], [ 'enumerable', true ], [ 'configurable', true ]]
 
+// ======== решение 2 ==========
+let objDescriptor = Object.getOwnPropertyDescriptor(order, 'totalPrice')
+console.log(Object.entries(objDescriptor));
 
 
 
@@ -35,8 +40,6 @@ let employees = {
         getSalary()  // функция
                 { console.log(employees.ratePerDay * employees.workingDays) } 
 };
-
-
 ////--------- тут просто удали
 delete employees.getSalary;
 const new_employees1 = Object.getOwnPropertyNames(employees)
@@ -47,14 +50,29 @@ console.log(new_employees1.join(', '))
 let new_employees2 = [];
     for (let key in employees) {
         if(typeof employees[key] != 'function'){
-            new_employees2.push(key)
+            Object.defineProperties(employees, key, { enumerable : false})
         }
     }
-console.log(new_employees2.join(', '))
+console.log(new_employees2.Object.keys(employees).join(', '))
 // => firstName, lastName, ratePerDay, workingDays
 
+
+////---------------------------
+let new_employees3 = [];
+    for (let key in employees) {
+        if(typeof employees[key] != 'function'){
+            new_employees3.push(key)
+        }
+    }
+console.log(new_employees3.join(', '))
+// => firstName, lastName, ratePerDay, workingDays
+
+
+
+
+
 //------- не правильно-- 
-// const new_employees = console.log(Object.defineProperty(employees, 'getSalary', {enumerable: false})); 
+// const new_employees = console.log(Object.defineProperty(employees, 'getSalary', {enumerable: true})); 
 // const new_employees = Object.getOwnPropertyNames(employees)
 // console.log(new_employees); 
 // => ['firstName', 'lastName', 'ratePerDay', 'workingDays', 'getSalary']
@@ -86,19 +104,38 @@ class Delivery{
         this.validPhone = validPhone
         }
 }
-let deliveryName = new Delivery(name, phone); // =>  Delivery {name: 'Pizza', phone: '+81234567890',validPhone: undefined}
-// let deliveryName = new Delivery(name, phone, validPhone); // => Delivery { name: 'Pizza', phone: '81234567890', validPhone: false }
-console.log(deliveryName);
-console.log('validPhone is: ', validPhone);
+//-------------------
+let deliveryName1 = new Delivery(name, phone, validPhone);
+console.log(deliveryName1);
+console.log(validPhone); 
+// => Delivery { name: 'Pizza', phone: '81234567890', validPhone: false }
+
+//-------------------
+let deliveryName2 = new Delivery(name, phone);
+console.log(deliveryName2);
+// =>  Delivery {name: 'Pizza', phone: '+81234567890',validPhone: undefined}
+
+ //=======  ПРАВИЛЬНОЕ РЕШЕНИЕ ===============
+ class Delivery{
+    constructor(name, phone){
+        this.name = name
+        this.phone = phone
+        }
+        get validPhone (){
+            return this.phone.startsWith('+')
+        }
+}
+let company1 = new Delivery('Pizza', '+72897289');
+console.log(company1.validPhone);
 
 
 
 
 //Задача 4
-// В программе создан класс Permissions, свойства которого описывают права пользователей на редактирование статей на сайте. Создайте новый класс User, который наследуется от класса Permissions. Дополнительно в классе User добавьте свойство name, значение которого класс принимает в качестве аргумента конструктора.
+// В программе создан класс Permission, свойства которого описывают права пользователей на редактирование статей на сайте. Создайте новый класс User, который наследуется от класса Permissions. Дополнительно в классе User добавьте свойство name, значение которого класс принимает в качестве аргумента конструктора.
 // Входные данные:
 
-class Permissions {
+class Permission {
     constructor() {
         this.create = false
         this.read = true
@@ -106,7 +143,7 @@ class Permissions {
         this.remove = false
     }
 }
-class User extends Permissions{
+class User extends Permission{
     constructor (name){
         super()
         this.name = name

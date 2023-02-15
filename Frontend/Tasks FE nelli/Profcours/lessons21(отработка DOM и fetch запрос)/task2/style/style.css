@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .todos_container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+  }
+  .card{
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+  
+    gap: 5px;
+
+    border: 1px inset rgb(0, 123, 255);
+    border-radius: 10px;
+    
+  }

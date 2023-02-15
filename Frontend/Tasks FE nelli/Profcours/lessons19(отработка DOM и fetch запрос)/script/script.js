@@ -4,9 +4,9 @@
 //     .then(res => res.json())
 //     .then(json => console.log(json))
 
-    fetch('https://dummyjson.com/products')
-    .then(res => res.json())
-    .then(json => console.log(json.products))
+    // fetch('https://dummyjson.com/products')
+    // .then(res => res.json())
+    // .then(json => console.log(json.products))
 
 
 

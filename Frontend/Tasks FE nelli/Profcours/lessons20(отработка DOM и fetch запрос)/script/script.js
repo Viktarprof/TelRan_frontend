@@ -14,7 +14,7 @@ let btn = document.querySelectorAll('button');
 
 
 const render = products => {
-  products.innerHTML = '';
+  users_container.innerHTML = '';
   const users_cards = products.map(({first_name, avatar}) => {
     const card = document.createElement('div');
     const nameElem = document.createElement('p');
@@ -42,9 +42,9 @@ const get_users = (num) => {
     .then(res => res.json())
     .then(json => render(json.data))
   }
+  // get_users(1)
 
-
-
+//// ==== переключение кнопок ==== делал сам
 const show_user=()=>{
   btn.forEach(elem => elem.onclick=()=>{
     users_container.innerHTML = '';
@@ -52,7 +52,13 @@ const show_user=()=>{
     })
 };
   btn.addeventlistener('click', show_user());
-   
+
+
+//// ==== переключение кнопок ==== сделали в классе
+// const [ first_btn, second_btn ] = document.querySelectorAll('.triggers button');
+
+// first_btn.addEventListener('click', () => getUsers(1));
+// second_btn.addEventListener('click', () => getUsers(2));
      
 
   

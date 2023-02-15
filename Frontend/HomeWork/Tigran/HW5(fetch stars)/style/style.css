@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* anivation  square_up */
+.glass {
+    z-index: -1;
+    position:fixed;
+     width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.glass li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(85, 83, 83, 0.638);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: square_up 5s linear infinite;
+    bottom: -150px;
+}
+.glass li:nth-child(1) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+.glass li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.glass li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+.glass li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.glass li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+.glass li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+.glass li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+.glass li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.glass li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+.glass li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+@keyframes square_up {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-2000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 100%;
+    }
+}
+body{
+    background-image: url('..//media/fon.png');
+    background-repeat:repeat-y;
+    background-position: center;
+    opacity: 80%;
+}
+
+#root{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.one_card{
+    width: 450px;
+    height: 330px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow:2px 5px 18px 0px rgb(108, 97, 97);
+}
+
+.product_title,
+.product_price{
+    text-align: left;
+    font-size: 20px;
+}
+
+.product_img{
+    width: 300px;
+    height: 150px;
+    margin-bottom: 15px;
+    animation: move_img 8s linear infinite;
+}
+/* заставил вращаться картинки вокруг своей оси */
+  /* @keyframes move_img {
+    50% {transform: rotateY(150deg);}
+    100% {transform: rotateY(360deg);}
+
+} */
+
+.order_prod{
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px 0 0 100px;
+    box-shadow:2px 5px 18px 5px black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 20px;
+    background-color: rgba(100, 148, 237, 0.793);
+    cursor: pointer;
+    animation: move_bt 2s linear infinite;
+}
+  @keyframes move_bt {
+    15% {transform: translateX(4px);}
+    35% {transform: translateX(-5px)}
+    55% {transform: translateX(2px)}
+    75% {transform: translateX(-3px)}      
+    85% {transform: translateX(2px)}
+    100% {transform: translateX(0px)}
+  }
+
+
+.active {
+    color: orange
+}
