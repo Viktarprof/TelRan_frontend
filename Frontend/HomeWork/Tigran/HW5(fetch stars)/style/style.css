@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-image: url('..//media/fon.png');
+    background-repeat:repeat-y;
+    background-position: center;
+}
+
 /* anivation  square_up */
 .glass {
     z-index: -1;
@@ -99,11 +106,6 @@
         border-radius: 100%;
     }
 }
-body{
-    background-image: url('..//media/fon.png');
-    background-repeat:repeat-y;
-    background-position: center;
-}
 
 #root{
     display: grid;
@@ -111,9 +113,11 @@ body{
     justify-items: center;
     justify-content: center;
     text-align: center;
-    gap: 10px;
+    grid-gap: 20px;
     margin: 20px;
 }
+
+
 
 .one_card{
     width: 450px;
@@ -173,3 +177,6 @@ body{
 .active {
     color: orange
 }
+
+
+

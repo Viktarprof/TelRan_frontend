@@ -24,6 +24,7 @@
 - [HW3](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW3(ООП%2C%20Шаблонизация)/script/script.js)
 - [HW4](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW4(ООП)/script/script.js)
 - [HW5](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW5(fetch%20stars)/index.html), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW5(fetch%20stars)/script/script.js)
+- [HW6](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW6(product%20card)/index.html), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW5(product%20card)/script/script.js)
 
 
 

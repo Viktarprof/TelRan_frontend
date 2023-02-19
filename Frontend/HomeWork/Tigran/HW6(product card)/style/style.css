@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(230deg,#e5ff00a7 60%, #1eff00a8 30%,#0088ffa7 75% ,#ff00008c 30%);
+}
+.div_card{
+    text-align: left;
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.448);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    position: relative;
+   
+    clip-path: polygon(60px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 60px);
+    -webkit-transition: 3s ease;
+  
+}
+.div_card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58px;
+    height:  60px;
+    background: rgba(49, 49, 49, 0.649);
+    transition: transform 3s;
+    border-radius: 0 0 10px 0 ;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.div_card:hover{
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%, 0% 0px);
+    transform: scale(1.2);
+    transition-duration: 3s;
+  }
+.div_card:hover::after{
+    transform: translate(-100%, -100%);
+}
+
+
+.img_elem{
+    width: 300px;
+    height: 170px;
+}
+.div_desr{
+    display: flex;
+    flex-direction: column;
+}
+
+.div_star{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.active {
+    color: orange;
+    animation: scales 3s linear infinite;
+}
+@keyframes scales {
+    55% {scale: 1.7;}
+    100% {scale: 1;}
+}
+
+.btn{
+    display: flex;
+    align-items: flex-end
+}
+.btn_left{
+    width: 40px;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(157, 153, 153, 0.75);
+    border-radius: 10px 0 0 10px;
+    box-shadow: -7px 3px 15px 11px rgb(0 0 0 / 43%);
+    transition: transform 900ms ease-out;
+}
+.btn_left:hover{
+    background-color: rgba(78, 77, 77, 0.75);
+}
+.btn_rigth{
+    width: 40px;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(157, 153, 153, 0.75);
+    border-radius:  0 10px 10px 0;
+    box-shadow: 7px 3px 15px 11px rgb(0 0 0 / 43%);
+    transition: transform 900ms ease-out;
+  
+}
+.btn_rigth:hover{
+    background-color: rgba(78, 77, 77, 0.75);
+}

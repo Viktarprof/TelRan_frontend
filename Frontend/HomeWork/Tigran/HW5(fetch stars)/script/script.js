@@ -33,14 +33,18 @@
 // }
 
 
+
+//=======================================
 let url = "https://dummyjson.com/products"
 fetch(url)
 .then(res => res.json())
 // .then(json => console.log(json)) // получил объект => массив
 .then(json => render(json.products));
 
+//=======================================
 const root_container = document.querySelector('#root'); // обратился к созданному узлу
 
+//=======================================
 const render = products =>{  // запускаю функцию по созданию карточек
 
 const product_cards = products.map(({title, price, images, rating}) =>{  // через метод обрабатываю старый массив и получаю нужны мне массив
@@ -57,7 +61,7 @@ const product_cards = products.map(({title, price, images, rating}) =>{  // че
     product_price.innerText = `Price: ${price} $`;
     order_prod.innerText = 'Оформить';
    
-    product_img.setAttribute('src', images[2]);
+    product_img.setAttribute('src', images[0]);
     product_img.setAttribute('alt', title);
 
     // создаю классы для стилей
@@ -81,16 +85,17 @@ const product_cards = products.map(({title, price, images, rating}) =>{  // че
 root_container.append(...product_cards);
 }
 
-
+//=======================================
 function ratings(n){
     const div_star = document.createElement('div');
         for (let i = 1; i <= 5; i++){
             const p_stars = document.createElement('span');
 
-            if(i <=`${n}`){
+            if(i <= n){
                 p_stars.classList.add('active')
                 div_star.append(p_stars)
             }
+            // p_stars.className = 'fa fa-star'
             p_stars.classList.add('fa');
             p_stars.classList.add('fa-star');
     
@@ -98,8 +103,5 @@ function ratings(n){
         }
         return div_star
 }
-
-
-
 
 /* scc. 140 строка. заставил вращаться картинки вокруг своей оси */
