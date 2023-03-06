@@ -1,0 +1,22 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    list-style: none;
+}
+.nav > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.globeIcone{
+    color: coral;
+
+}

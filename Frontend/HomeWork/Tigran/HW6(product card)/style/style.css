@@ -24,7 +24,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 
     position: relative;
    
@@ -40,7 +40,7 @@ body{
     width: 58px;
     height:  60px;
     background: rgba(49, 49, 49, 0.649);
-    transition: transform 3s;
+    transition: transform 2.5s;
     border-radius: 0 0 10px 0 ;
     border-right: 1px solid white;
     border-bottom: 1px solid white;
@@ -58,7 +58,8 @@ body{
 
 .img_elem{
     width: 300px;
-    height: 170px;
+	height: 200px;
+	object-fit: contain;
 }
 .div_desr{
     display: flex;
@@ -94,7 +95,7 @@ body{
     background-color: rgba(157, 153, 153, 0.75);
     border-radius: 10px 0 0 10px;
     box-shadow: -7px 3px 15px 11px rgb(0 0 0 / 43%);
-    transition: transform 900ms ease-out;
+    transition: transform 2300ms ease-out;
 }
 .btn_left:hover{
     background-color: rgba(78, 77, 77, 0.75);
@@ -108,7 +109,7 @@ body{
     background-color: rgba(157, 153, 153, 0.75);
     border-radius:  0 10px 10px 0;
     box-shadow: 7px 3px 15px 11px rgb(0 0 0 / 43%);
-    transition: transform 900ms ease-out;
+    transition: transform 2300ms ease-out;
   
 }
 .btn_rigth:hover{

@@ -12,6 +12,7 @@
 const div_root = document.querySelector('#root');
 const btn_left = document.querySelector('.btn_left');
 const btn_rigth = document.querySelector('.btn_rigth');
+let id_user = 1; // по умолчанию юзер 1
 
 function get_fetch(id){
     let url = `https://dummyjson.com/products/${id}`
@@ -21,14 +22,13 @@ function get_fetch(id){
     .then(json => render(json))
 }
 
-let id_user = 1; // по умолчанию юзер 1
-
 function render ({images, title, price, rating}) { 
     div_root.innerHTML = '';
     const div_card = document.createElement('div');
     div_card.className = 'div_card'
 
     const img_elem = document.createElement('img');
+    const img_div = document.createElement('div');
     const div_desr = document.createElement('div');
     const title_elem = document.createElement('h4');
     const price_elem = document.createElement('p');
@@ -38,9 +38,6 @@ function render ({images, title, price, rating}) {
 
     img_elem.src = images[0];
     img_elem.alt = title;
-    img_elem.width = 300;
-
-    // console.log(img_elem);
 
     title_elem.innerText = `Title: ${title}`;
     price_elem.innerText = `Price: ${price}`;
@@ -83,7 +80,7 @@ ratings = (n) => {
 
 const text = document.createElement('p');
 btn_left.addEventListener('click', () => {
-    if (id_user == 1) {
+    if (id_user === 1) {
         btn_left.disabled = true;
         text.innerText = 'Кнопка не активна, листай в другую сторону.'
       
@@ -97,7 +94,7 @@ btn_left.addEventListener('click', () => {
 })
 
 btn_rigth.addEventListener('click', () => {
-    if (id_user == 30) {
+    if (id_user === 30) {
         btn_rigth.disabled = true;
         text.innerText = 'Кнопка не активна, листай в другую сторону.'
         document.body.append(text)

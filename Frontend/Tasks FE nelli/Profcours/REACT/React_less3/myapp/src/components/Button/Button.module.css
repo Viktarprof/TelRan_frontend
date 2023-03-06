@@ -1,0 +1,20 @@
+.btn{
+    width: 96px;
+    height: 43px;
+
+    background: #FFE01B;
+    color: #241C15;
+
+    box-shadow: 0px 0px 0px #241C15;
+    border-radius: 26px;
+    border: none;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+
+    text-align: center;
+    cursor: pointer;
+}

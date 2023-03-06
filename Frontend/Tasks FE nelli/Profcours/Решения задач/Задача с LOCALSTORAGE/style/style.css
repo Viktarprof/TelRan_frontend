@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+.root{
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  justify-content: center;
+  gap: 10px;
+}  
+ 
+.div_cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 250px;
+  height: 150px;
+}  
+.form_add_user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.active{
+  background-color: red;
+}
