@@ -48,10 +48,10 @@ const pre_hed = document.querySelector('.pre_hed');
 
 // массив картинок
 const header_img = [
-    '../media/Header_img/header_photo1.png',
-    '../media/Header_img/header_photo2.png',
-    '../media/Header_img/header_photo3.png',
-    '../media/Header_img/header_photo4.png'
+    './media/Header_img/header_photo1.png',
+    './media/Header_img/header_photo2.png',
+    './media/Header_img/header_photo3.png',
+    './media/Header_img/header_photo4.png'
 ]
 
 let count = 0
