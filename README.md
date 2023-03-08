@@ -27,4 +27,4 @@
 - [HW6](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW6(product%20card)/index.html), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW6(product%20card)/script/script.js)
 - [HW7](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW7(верстка%20макета%2C%20JS-слайдер%2C%20Бургер%20кнопка)/index.html), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW7(верстка%20макета%2C%20JS-слайдер%2C%20Бургер%20кнопка)/script/script.js)
 
-- [HW8](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW8(react_velozar)/index.html)
+- [HW8](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/Hw8(react_velozar)/myapp/src/index.js)
