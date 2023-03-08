@@ -1,0 +1,29 @@
+.card_item{
+    width: 480px;
+    height: 480px;
+}
+.card_item:hover{
+    transform: scale(1.1);
+}
+.card_item h3{
+    width: 187px;
+    height: 72px;
+    margin-left: 60px;
+
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.006em;
+
+    color: #FFFFFF;
+}
+.line{
+    width: 260px;
+    height: 2px;
+
+    margin: 94px 60px 30px 60px;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #FFFFFF;
+}

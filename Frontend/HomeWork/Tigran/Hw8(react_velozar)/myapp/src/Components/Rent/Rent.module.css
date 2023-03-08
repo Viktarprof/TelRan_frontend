@@ -1,0 +1,43 @@
+.card_rent{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    
+   
+}
+.image{
+    width: 637px;
+    height: 800px;
+
+    background-image: url('./Media/bikes.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info_text h3{
+    width: 361px;
+    height: 51px;
+    margin-bottom: 49px;
+
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 28px;
+    letter-spacing: -0.006em;
+
+    color: #22356F;
+}
+.info_text p{
+    width: 576px;
+    height: 215px;
+
+  
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: -0.01em;
+
+    color: #22356F;
+}

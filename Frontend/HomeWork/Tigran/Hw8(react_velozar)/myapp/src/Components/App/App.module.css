@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.container_cards{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cards{
+    display: flex;
+}

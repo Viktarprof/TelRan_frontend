@@ -1,0 +1,29 @@
+.card_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+
+.card_info p{
+    width: 739px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+    margin-left: 75px;
+
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.005em;
+
+    color: #22356F;
+}
+

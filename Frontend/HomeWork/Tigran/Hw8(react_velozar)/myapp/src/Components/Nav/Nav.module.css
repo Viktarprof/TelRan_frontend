@@ -1,0 +1,51 @@
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 118px;
+    height: 119px;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 69px;
+}
+li{
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    border:2px solid transparent;
+    cursor: pointer;
+}
+li:hover{
+    border-bottom: 2px solid #000000 ;
+}
+button{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 50px;
+
+    color: #FFFFFF;
+    background: #F9B640;
+    text-align: center;
+
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+button:hover{
+    width: 160px;
+    height: 60px;
+}
