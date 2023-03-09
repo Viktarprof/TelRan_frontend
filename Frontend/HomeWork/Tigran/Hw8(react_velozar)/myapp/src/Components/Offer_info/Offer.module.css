@@ -1,17 +1,21 @@
 .offerCard{
     display: flex;
-    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
 }
 .offerText{
     width: 618px;
     height: 604px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 27px;
-    color: #FFFFFF;
-    
+
+    margin-left: 160px;
+    color: #FFFFFF;   
 }
+
 .offerText h2{
     width: 361px;
     height: 51px;
@@ -35,7 +39,7 @@
     text-align: justify;
 }
 .image{
-    width: 618px;
+    width: 523px;
     height: 604px;
     background-image: url('./Media/bike_service.png');
     background-repeat: no-repeat;

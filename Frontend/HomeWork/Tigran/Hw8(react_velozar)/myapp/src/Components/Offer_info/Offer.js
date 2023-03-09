@@ -3,7 +3,7 @@ import app_container from "../App/App.module.css"
 
 function Offer(){
     return(
-        <div className={styleOffer.offerCard + ' '+ app_container.container}>
+        <div className={styleOffer.offerCard + ' '+ app_container.container_cards}>
             <div className={styleOffer.offerText}  >
                 <h2>
                     Что мы предлагаем

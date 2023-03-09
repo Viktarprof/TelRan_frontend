@@ -15,4 +15,5 @@
 
 .cards{
     display: flex;
+    /* grid-template-columns: repeat(); */
 }

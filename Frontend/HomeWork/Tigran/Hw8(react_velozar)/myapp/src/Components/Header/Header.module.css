@@ -6,8 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 100px;
+
     margin-top: 90px;
+    padding-bottom: 90px;
     
 }
 .about_company{
@@ -15,6 +17,7 @@
     flex-direction: column;
     gap: 46px;
 }
+
 .about_company h1{
     width: 610px;
     height: 90px;
