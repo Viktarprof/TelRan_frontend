@@ -6,6 +6,12 @@ import Service from "../Service/Service";
 import Rent from "../Rent/Rent";
 
 function App(){
+    let data = [
+        {id:1, title:'Годовое ТО', background: '#22356F'},
+        {id:2, title:'Выравнивание колес', background: '#0052C1'},
+        {id:3, title:'Настройка переключателей', background: '#76B58B'},
+    ];
+
     return(
         <div>
             <div style = {{backgroundColor: '#F4F9E2'}}>
@@ -18,9 +24,16 @@ function App(){
                 <Other/>
             </div>
             <div className={`${style_app.cards} ${style_app.container_cards}`}>   
+                {data.map((elem)=><Service
+                                    key={elem.id}
+                                    title = {elem.title}
+                                    background = {elem.background}
+                                />)}
+            
+                {/* или по отдельности в ручную
                 <Service title = {'Годовое ТО'}  background = {'#22356F'}/>
                 <Service title = {'Выравнивание колес'}  background = {'#0052C1'}/>
-                <Service title = {'Настройка переключателей'}  background = {'#76B58B'}/>
+                <Service title = {'Настройка переключателей'}  background = {'#76B58B'}/> */}
             </div>
             <div className={`${style_app.container_cards}`}>
                 <Rent/>

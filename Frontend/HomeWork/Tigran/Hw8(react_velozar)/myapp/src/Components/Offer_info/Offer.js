@@ -1,5 +1,7 @@
 import styleOffer from "./Offer.module.css"
 import app_container from "../App/App.module.css"
+import bike_service from './Media/bike_service.png'
+import Picture from "../Picture/Picture"
 
 function Offer(){
     return(
@@ -15,9 +17,8 @@ function Offer(){
                     выполняем качественно и с душой. 
                 </p>
             </div>
-            <div className={styleOffer.image}>
-
-            </div>
+            <Picture src = {bike_service} alt = 'bike_service'/>
+            {/* или второй вариант <div className={styleOffer.image}></div> */}
 
         </div>
     )
