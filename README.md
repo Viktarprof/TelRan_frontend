@@ -5,6 +5,7 @@
 - [HW4](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Hayk/HW4)
 - [HW5](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Hayk/HW5)
 - [HW6](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Hayk/HW6/script)
+- [Calculator](https://github.com/Viktarprof/TelRan_frontend/blob/main/Frontend/HomeWork/interesting/Calculator/index.html)
 
 ## Proof course ROZA
 - [CV](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/MyCV)
@@ -26,5 +27,3 @@
 - [HW5](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW5(fetch%20stars)/index.html), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW5(fetch%20stars)/script/script.js)
 - [HW6](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW6(product%20card)/index.html), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW6(product%20card)/script/script.js)
 - [HW7](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW7(верстка%20макета%2C%20JS-слайдер%2C%20Бургер%20кнопка)/index.html), [JS](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/HW7(верстка%20макета%2C%20JS-слайдер%2C%20Бургер%20кнопка)/script/script.js)
-
-- [HW8](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Tigran/Hw8(react_velozar)/myapp/public/index.html)
