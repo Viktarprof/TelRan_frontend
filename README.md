@@ -5,7 +5,7 @@
 - [HW4](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Hayk/HW4)
 - [HW5](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Hayk/HW5)
 - [HW6](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Hayk/HW6/script)
-- [Calculator](https://github.com/Viktarprof/TelRan_frontend/blob/main/Frontend/HomeWork/interesting/Calculator/index.html)
+- [Calculator](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/interesting/Calculator/index.html)
 
 ## Proof course ROZA
 - [CV](https://viktarprof.github.io/TelRan_frontend/Frontend/HomeWork/Roza/MyCV)
